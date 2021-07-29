@@ -1,0 +1,16 @@
+body{
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $text;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: inherit;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,11 @@
+.cta{
+    background: $darkBlue;
+    padding: 5rem 0;
+    color: $white;
+    &__container{
+        text-align: center;
+        p{
+            font-weight: 400;
+        }
+    }
+}

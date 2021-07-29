@@ -1,0 +1,166 @@
+.navbar{
+    padding: 1.5rem inherit;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    /* Nav Logo */
+    &__logo{
+        width: 30rem;
+        display: inline-block;
+    }
+    
+    /* Nav Bar */
+    &__navigation{
+        opacity: 0;
+        position: absolute;
+        transition: opacity 200ms ease-in-out;
+        top: 100%;
+        left: 0;
+        width: 0px;
+        height: 0;
+        padding: 2rem;
+        background-color: $darkBlue;
+        z-index: 99;
+
+        /* Show navigation on large screen */
+        @include respond-to('medium'){
+            position: relative;
+            opacity: 1;
+            width: 100%;
+            padding: 0;
+            height: auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 1rem;
+
+            @include respond-to('medium'){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+            }
+
+            li{
+                padding: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 1.8rem;
+                opacity: 0;
+                position: relative;
+                @include respond-to('medium'){
+                    opacity: 1;
+                }
+                a:link,
+                a:visited{
+                    color: $white;
+                    display: block;
+                }  
+
+                &:not(:last-child){
+                    margin-bottom: 2rem;
+
+                    @include respond-to('medium'){
+                        margin-bottom: 0;
+                    }
+                }
+
+                &::after{
+                    @include respond-to('small'){
+                        content: '';
+                        position: absolute;
+                        bottom: -.2rem;
+                        left: 50%;
+                        right: -1rem;
+                        display: block;
+                        height: 2px;
+                        background-color: $lightBlue;
+                        opacity: 0;
+                        border-radius: 5px;
+                        transform: translateX(-50%) scaleX(0);  
+                        transition: transform 300ms ease-in-out;
+                        width: 0px;
+                    }
+                }
+
+                &:hover{
+                    background-color: $lightBlue;
+                    border-radius: 10px;
+                    
+                    @include respond-to('medium'){
+                        background-color: transparent; 
+                        &::after{
+                            content: '';
+                            opacity: 1;
+                            width: 80%;
+                            transform: translateX(-50%) scaleX(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__checkbox{
+        display: none;
+    }
+
+    &__button{
+        cursor: pointer;
+        @include respond-to('medium'){
+            display: none;
+        }
+        span{
+
+            text-align: center;
+            position: relative;
+
+            &,
+            &::after,
+            &::before{
+                width: 3rem;
+                height: 2px;
+                background-color: $white;
+                display: inline-block;
+                transition: all 100ms ease-in;
+            }
+
+            &::before,
+            &::after{
+                content: '';
+                position: absolute;
+                left: 0;
+            }
+
+            &::before{ top: -1rem; }
+            &::after { top:1rem; }
+        }
+    }
+
+    /* Nav Mobile Toggler */
+    &__checkbox:checked ~ &__navigation{
+        opacity: 1;
+        width: 100%;
+        height: auto;
+
+        ul > li {
+            opacity: 1;
+        }
+    }
+
+    &__checkbox:checked ~ &__button span{
+        background-color: transparent;
+    }
+
+    &__checkbox:checked ~ &__button span::before{
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    &__checkbox:checked ~ &__button span::after{
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}
