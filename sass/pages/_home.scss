@@ -1,5 +1,5 @@
 .header-intro{
-    background: url('../../img/hero-background.svg') no-repeat;
+    background: url('../img/hero-background.svg') no-repeat;
     background-size: cover;
     height: 80vh;
     padding-top: 3rem;
@@ -118,7 +118,7 @@
 
 /* Workflow section */
 .workflow{
-    background: url('../../img/workflow-background.svg') no-repeat;
+    background: url('../img/workflow-background.svg') no-repeat;
     background-size: cover;
     padding-bottom: 8rem;
 
@@ -149,7 +149,7 @@
         width: 4px;
         height: 5.4rem;
         margin-top: 1.8rem;
-        background-image: url('../../img/dots.png');
+        background-image: url('../img/dots.png');
         background-position: 50% 50%;
         background-size: auto;
         background-repeat: no-repeat;
