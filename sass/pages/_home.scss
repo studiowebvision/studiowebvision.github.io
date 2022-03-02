@@ -1,275 +1,274 @@
-.header-intro{
-    background: url('../img/hero-background.svg') no-repeat;
-    background-size: cover;
-    height: 100vh;
-    padding-top: 3rem;
+.header-intro {
+  background: url("../img/hero-background.svg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 3rem;
 }
 
 /* Section hero */
-.hero{
-    padding: 16rem 0;
-    color: $white;
+.hero {
+  padding: 16rem 0;
+  color: $white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
+    z-index: 1;
+  }
 
-    &__container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  &__intro {
+    h1 {
+      font-size: 3.6rem;
+      letter-spacing: 1.5;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+    p {
+      margin: 4rem 0;
+      font-size: 2rem;
+      line-height: 1.8;
+    }
+  }
+
+  &__btn {
+    border: 1px $white solid;
+    border-radius: 2.25rem;
+    padding: 1.3rem 3.2rem;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+
+    video {
+      width: 100%;
+      object-fit: cover;
     }
 
-    &__intro{
-        h1{
-            font-size: 3.6rem;
-            letter-spacing: 1.5;
-            line-height: 1.5;
-            font-weight: 500;
-        }
-        p{
-            margin: 4rem 0;
-            font-size: 2rem;
-            line-height: 1.8;
-        }
+    &::before {
+      content: "";
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      height: 100%;
+      position: absolute;
     }
-
-    &__btn{
-        border: 1px $white solid;
-        border-radius: 2.25rem;
-        padding: 1.3rem 3.2rem;
-        display: inline-block;
-        text-transform: uppercase;
-    }
-
-    &__mockup{
-
-        max-height: 40rem;
-        @include respond-to('medium'){
-
-            position: absolute;
-            right: 7%;
-            top: 2%;
-            transform: translateY(48%);
-        }
-    }
+  }
 }
-
 
 /* Section cards */
-.card{
+.card {
+  &__home {
+    margin-top: -12rem;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 10rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
+  }
 
-    &__home{
-        margin-top: -12rem;
-        z-index: 2;
-        position: relative;
-        padding-bottom: 10rem;
-        display: grid;
-        gap: 2.5rem;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2, min-content);
+  &__item {
+    background-color: $white;
+    img {
+      width: 8rem;
     }
 
-    &__item{
-        background-color: $white;
-        img{
-            width: 8rem;
-        }
-
-        h2{
-            font-size: 1.9rem;
-        }
+    h2 {
+      font-size: 1.9rem;
     }
+  }
 }
-
 
 /* Section Features */
-.features{
-    padding-bottom: 15rem;
-    &__list{
-        
-        h2{
-            font-size: 3rem;
-            font-weight: 500;
-        }
-        ul{
-            padding-left: 2rem;
-            margin-top: 3rem;
-            li{
-                line-height: 1.5;
-                font-weight: 300;
-                font-size: 1.8rem;
-                padding-left: 1rem;
-
-                &:not(:last-child){
-                    margin-bottom: 2rem;
-                }
-                &::marker{
-                    color: $lightBlue;
-                    font-size: 1.8rem;
-                }
-            }
-        }
+.features {
+  padding-bottom: 15rem;
+  &__list {
+    h2 {
+      font-size: 3rem;
+      font-weight: 500;
     }
+    ul {
+      padding-left: 2rem;
+      margin-top: 3rem;
+      li {
+        line-height: 1.5;
+        font-weight: 300;
+        font-size: 1.8rem;
+        padding-left: 1rem;
 
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+        &::marker {
+          color: $lightBlue;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
 }
-
 
 /* Workflow section */
-.workflow{
-    background: url('../img/workflow-background.svg') no-repeat;
-    background-size: cover;
-    padding-bottom: 2rem;
+.workflow {
+  background: url("../img/workflow-background.svg") no-repeat;
+  background-size: cover;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  &__container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+  }
+
+  &__item {
     text-align: center;
-    
-    &__container{
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-gap: 3rem;
-    }
+  }
 
-    &__item{
-        text-align: center;
-    }
-
-    &__timeline{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    }
-
-    &__circle{
-        text-align: center;
-        color: $white;
-        background-color: $darkBlue;
-        width: 5.7rem;
-        height: 5.7rem;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: relative;
-
-        &::before,
-        &::after{
-            content: '';
-            width: 100%;
-            height: 5px;
-            position: absolute;
-            background-image: url("../img/dots.png");
-        }
-
-        &::before{
-            left: -150%;
-        }
-
-
-        &::after{
-            right: -150%;
-        }
-    }
-
-    &__heading{
-        h2{
-            color: $darkBlue;
-            font-size: 1.9rem;
-            margin-top: 2rem;
-            margin-bottom: 0;
-        }
-    }
-
-    &__description{
-       margin-left: auto;
-       padding: 2rem;
-
-       p{
-           font-size: 1.6rem;
-           font-weight: 300;
-           line-height: 1.5;
-       }
-    }
-}
-
-/* Mockup Devices */
-.mockup{
-    text-align: center;
-    padding: 5rem 0;
+  &__timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
 
-    &__container{
-        max-width: 80vw;
-        width: 100%;
-        position: relative;
+  &__circle {
+    text-align: center;
+    color: $white;
+    background-color: $darkBlue;
+    width: 5.7rem;
+    height: 5.7rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 5px;
+      position: absolute;
+      background-image: url("../img/dots.png");
     }
 
-    &__tablet{
-        position: absolute;
-        bottom: 3vh;
-        left: -5vw;
-        width: 250px;
-
-        &--overlay{
-            width: 80%;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 88%;
-            position: absolute;
-            top: 6%;
-            overflow: hidden;
-            border-radius: 5px;
-        }
-
-        &--overlay > *{
-            height: 100%;
-            object-fit: cover;
-        }
-
+    &::before {
+      left: -150%;
     }
 
-    &__desktop{
-        max-width: 80vw;
-        position: relative;
-
-        &--overlay{
-            width: 82%;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 59%;
-            position: absolute;
-            top: 7%;
-            overflow: hidden;
-        }
-
-        &--overlay > *{
-            height: 100%;
-        }
+    &::after {
+      right: -150%;
     }
+  }
 
-    &__smartphone{
-        position: absolute;
-        bottom: 3vh;
-        right: -2%;
-        width: 150px;
-
-        &--overlay{
-            width: 65%;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 83%;
-            position: absolute;
-            top: 8%;
-            overflow: hidden;
-            border-radius: 5px;
-        }
-
-        &--overlay > *{
-            height: 100%;
-            object-fit: cover;
-        }
-
+  &__heading {
+    h2 {
+      color: $darkBlue;
+      font-size: 1.9rem;
+      margin-top: 2rem;
+      margin-bottom: 0;
     }
+  }
 
+  &__description {
+    margin-left: auto;
+    padding: 2rem;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+  }
 }
 
+/* Mockup Devices */
+.mockup {
+  text-align: center;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  &__container {
+    max-width: 80vw;
+    width: 100%;
+    position: relative;
+  }
+
+  &__tablet {
+    position: absolute;
+    bottom: 3vh;
+    left: -5vw;
+    width: 250px;
+
+    &--overlay {
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 88%;
+      position: absolute;
+      top: 6%;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    &--overlay > * {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__desktop {
+    max-width: 80vw;
+    position: relative;
+
+    &--overlay {
+      width: 82%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 59%;
+      position: absolute;
+      top: 7%;
+      overflow: hidden;
+    }
+
+    &--overlay > * {
+      height: 100%;
+    }
+  }
+
+  &__smartphone {
+    position: absolute;
+    bottom: 3vh;
+    right: -2%;
+    width: 150px;
+
+    &--overlay {
+      width: 65%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 83%;
+      position: absolute;
+      top: 8%;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    &--overlay > * {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

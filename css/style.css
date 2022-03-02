@@ -116,6 +116,8 @@ input[type=reset],
   position: relative;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 99;
   /* Nav Logo */
   /* Nav Bar */
   /* Nav Mobile Toggler */ }
@@ -131,8 +133,6 @@ input[type=reset],
     width: 0px;
     height: 0;
     padding: 2rem;
-    background-color: #205271;
-    z-index: 99;
     /* Show navigation on large screen */ }
     @media (min-width: 64em) {
       .navbar__navigation {
@@ -171,9 +171,9 @@ input[type=reset],
               margin-bottom: 0; } }
         @media (min-width: 48em) {
           .navbar__navigation ul li::after {
-            content: '';
+            content: "";
             position: absolute;
-            bottom: -.2rem;
+            bottom: -0.2rem;
             left: 50%;
             right: -1rem;
             display: block;
@@ -191,7 +191,7 @@ input[type=reset],
             .navbar__navigation ul li:hover, .navbar__navigation ul li:active {
               background-color: transparent; }
               .navbar__navigation ul li:hover::after, .navbar__navigation ul li:active::after {
-                content: '';
+                content: "";
                 opacity: 1;
                 width: 80%;
                 transform: translateX(-50%) scaleX(1); } }
@@ -212,7 +212,7 @@ input[type=reset],
         display: inline-block;
         transition: all 100ms ease-in; }
       .navbar__button span::before, .navbar__button span::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0; }
       .navbar__button span::before {
@@ -271,12 +271,13 @@ input[type=reset],
 /* Section hero */
 .hero {
   padding: 16rem 0;
-  color: #FFF;
-  position: relative; }
+  color: #FFF; }
   .hero__container {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    z-index: 1; }
   .hero__intro h1 {
     font-size: 3.6rem;
     letter-spacing: 1.5;
@@ -292,14 +293,22 @@ input[type=reset],
     padding: 1.3rem 3.2rem;
     display: inline-block;
     text-transform: uppercase; }
-  .hero__mockup {
-    max-height: 40rem; }
-    @media (min-width: 64em) {
-      .hero__mockup {
-        position: absolute;
-        right: 7%;
-        top: 2%;
-        transform: translateY(48%); } }
+  .hero__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden; }
+    .hero__video video {
+      width: 100%;
+      object-fit: cover; }
+    .hero__video::before {
+      content: "";
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      height: 100%;
+      position: absolute; }
 
 /* Section cards */
 .card__home {
@@ -369,7 +378,7 @@ input[type=reset],
     justify-content: center;
     position: relative; }
     .workflow__circle::before, .workflow__circle::after {
-      content: '';
+      content: "";
       width: 100%;
       height: 5px;
       position: absolute;

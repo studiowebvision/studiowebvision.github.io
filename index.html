@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- <base href="https://studiowebvision.github.io/site/"> -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flex.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/flex.css" />
     <title>Studio Webvision - Webdesign & online marketing</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header-intro">
-        <div class="navbar container">
-            <a href="/" class="navbar__logo"><img src="img/logo.svg" alt="Logo"></a>
-            <input type="checkbox" class="navbar__checkbox" id="mobile">
-            <label for="mobile" class="navbar__button">
-                <span>&nbsp;</span>
-            </label>
-            <nav class="navbar__navigation">
-                <ul>
-                    <li><a href="#">Websites</a></li>
-                    <li><a href="#">Webshops</a></li>
-                    <li><a href="#">Realisaties</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+      <div class="navbar container">
+        <a href="/" class="navbar__logo"
+          ><img src="img/logo.svg" alt="Logo"
+        /></a>
+        <input type="checkbox" class="navbar__checkbox" id="mobile" />
+        <label for="mobile" class="navbar__button">
+          <span>&nbsp;</span>
+        </label>
+        <nav class="navbar__navigation">
+          <ul>
+            <li><a href="#">Websites</a></li>
+            <li><a href="#">Webshops</a></li>
+            <li><a href="#">Realisaties</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section class="hero">
+        <div class="hero__video">
+          <video
+            autoplay
+            muted
+            loop
+            poster="video/video.png"
+            controls
+            preload="auto"
+          >
+            <source src="video/video-portfolio.mp4" type="video/mp4" />
+          </video>
         </div>
-        <section class="hero">
-            <div class="hero__container container">
-                <div class="hero__intro">
-                    <h1>Jouw bedrijf online laten groeien</h1>
-                    <div class="seperator"></div>
-                    <p>Op zoek naar een website en/of webshop voor uw bedrijf? <br>Wij zorgen voor een resultaatgerichte website op maat van uw bedrijf. </p>
-                    <a href="#" class="hero__btn">Offerte aanvragen</a>
-                </div>
-                <img src="img/3D-mockup-hero.png" alt="" class="hero__mockup">
-            </div>
-        </section>
+        <div class="hero__container container">
+          <div class="hero__intro">
+            <h1>Jouw bedrijf online laten groeien</h1>
+            <div class="seperator"></div>
+            <p>
+              Op zoek naar een website en/of webshop voor uw bedrijf? <br />Wij
+              zorgen voor een resultaatgerichte website op maat van uw bedrijf.
+            </p>
+            <a href="#" class="hero__btn">Offerte aanvragen</a>
+          </div>
+        </div>
+      </section>
     </header>
     <section class="card card__home container">
-            <div class="card__item">
-                <img src="img/responsive.svg" alt="Responsive">
-                <h2>Websites en webshops</h2>
-                <p>Gebruiksvriendelijke website of webshop op ieder toestel.</p>
-            </div>
-            <div class="card__item">
-                <img src="img/online-vindbaarheid.svg" alt="Online marketing">
-                <h2>Online marketing</h2>
-                <p>Bereik meer klanten met een website die hoog scoort in Google</p>
-            </div>
-            <div class="card__item">
-                <img src="img/seo.svg" alt="SEO - Zoekmachine optimalisatie">
-                <h2>In eigen beheer</h2>
-                <p>Afbeelding of tekst aanpassen op uw website, met eenvoudige klikken.</p>
-            </div>
+      <div class="card__item">
+        <img src="img/responsive.svg" alt="Responsive" />
+        <h2>Websites en webshops</h2>
+        <p>Gebruiksvriendelijke website of webshop op ieder toestel.</p>
+      </div>
+      <div class="card__item">
+        <img src="img/online-vindbaarheid.svg" alt="Online marketing" />
+        <h2>Online marketing</h2>
+        <p>Bereik meer klanten met een website die hoog scoort in Google</p>
+      </div>
+      <div class="card__item">
+        <img src="img/seo.svg" alt="SEO - Zoekmachine optimalisatie" />
+        <h2>In eigen beheer</h2>
+        <p>
+          Afbeelding of tekst aanpassen op uw website, met eenvoudige klikken.
+        </p>
+      </div>
     </section>
- <!--    <section class="features container">
+    <!--    <section class="features container">
         <div class="features__list">
             <p class="subheading">wat we doen</p>
             <h2>Resultaatgerichte websites</h2>
@@ -121,180 +139,218 @@
         </div>
     </section> -->
     <section class="workflow">
-        <div class="container">
-            <p class="subheading">Stap voor stap, samen met u</p>
-            <h2>Hoe gaan we te werk?</h2>
-            <div class="workflow__container">
-                <div class="workflow__item">
-                    <div class="workflow__timeline">
-                        <div class="workflow__circle">1</div>
-                        <div class="workflow__line"></div>
-                    </div>
-                    <div class="workflow__heading">
-                        <h2 class="workflow__title">Verkennend gesprek</h2>
-                    </div>
-                    <div class="workflow__description">
-                        <p class="workflow__desc">Samen bedenken wij hoe uw bedrijf online te presenteren.</p>
-                    </div>
-                </div>
-                <div class="workflow__item">
-                    <div class="workflow__timeline">
-                        <div class="workflow__circle">2</div>
-                        <div class="workflow__line"></div>
-                    </div>
-                    <div class="workflow__heading">
-                        <h2 class="workflow__title">Concept & strategie</h2>
-                    </div>
-                    <div class="workflow__description">
-                        <p class="workflow__desc">We werken een concept uit dat we vrijblijvend aan u voorstellen.</p>
-                    </div>
-                </div>
-                <div class="workflow__item">
-                    <div class="workflow__timeline">
-                        <div class="workflow__circle">3</div>
-                        <div class="workflow__line"></div>
-                    </div>
-                    <div class="workflow__heading">
-                        <h2 class="workflow__title">Project realisatie</h2>
-                    </div>
-                    <div class="workflow__description">
-                        <p class="workflow__desc">Van het concept gaan we definitief over naar realisatie.</p>
-                    </div>
-                </div>
-                <div class="workflow__item">
-                    <div class="workflow__timeline">
-                        <div class="workflow__circle">4</div>
-                        <div class="workflow__line"></div>
-                    </div>
-                    <div class="workflow__heading">
-                        <h2 class="workflow__title">Project opvolging</h2>
-                    </div>
-                    <div class="workflow__description">
-                        <p class="workflow__desc">Onze ervaring verzekert een kwalitatieve opvolging.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <p class="subheading">Stap voor stap, samen met u</p>
+        <h2>Hoe gaan we te werk?</h2>
+        <div class="workflow__container">
+          <div class="workflow__item">
+            <div class="workflow__timeline">
+              <div class="workflow__circle">1</div>
+              <div class="workflow__line"></div>
             </div>
+            <div class="workflow__heading">
+              <h2 class="workflow__title">Verkennend gesprek</h2>
+            </div>
+            <div class="workflow__description">
+              <p class="workflow__desc">
+                Samen bedenken wij hoe uw bedrijf online te presenteren.
+              </p>
+            </div>
+          </div>
+          <div class="workflow__item">
+            <div class="workflow__timeline">
+              <div class="workflow__circle">2</div>
+              <div class="workflow__line"></div>
+            </div>
+            <div class="workflow__heading">
+              <h2 class="workflow__title">Concept & strategie</h2>
+            </div>
+            <div class="workflow__description">
+              <p class="workflow__desc">
+                We werken een concept uit dat we vrijblijvend aan u voorstellen.
+              </p>
+            </div>
+          </div>
+          <div class="workflow__item">
+            <div class="workflow__timeline">
+              <div class="workflow__circle">3</div>
+              <div class="workflow__line"></div>
+            </div>
+            <div class="workflow__heading">
+              <h2 class="workflow__title">Project realisatie</h2>
+            </div>
+            <div class="workflow__description">
+              <p class="workflow__desc">
+                Van het concept gaan we definitief over naar realisatie.
+              </p>
+            </div>
+          </div>
+          <div class="workflow__item">
+            <div class="workflow__timeline">
+              <div class="workflow__circle">4</div>
+              <div class="workflow__line"></div>
+            </div>
+            <div class="workflow__heading">
+              <h2 class="workflow__title">Project opvolging</h2>
+            </div>
+            <div class="workflow__description">
+              <p class="workflow__desc">
+                Onze ervaring verzekert een kwalitatieve opvolging.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="cta">
-        <div class="container cta__container">
-            <h2>Laten we samen uw project bespreken</h2>
-            <p>Laat hier je gegevens achter, we bellen je op</p>
-            <div class="row center-xs">
-                <form class="col-md-9 row center-xs">
-                    <div class="col-xs-12 col-md-4">
-                        <input type="text" id="naam" placeholder="Naam">
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <input type="tel" name="telefoon" id="telefoon" placeholder="Telefoon">
-                    </div>
-                    <div class="col-6">
-                        <button id="submit" class="secondary">Neem contact op</button>
-                    </div>
-                </form>
+      <div class="container cta__container">
+        <h2>Laten we samen uw project bespreken</h2>
+        <p>Laat hier je gegevens achter, we bellen je op</p>
+        <div class="row center-xs">
+          <form class="col-md-9 row center-xs">
+            <div class="col-xs-12 col-md-4">
+              <input type="text" id="naam" placeholder="Naam" />
             </div>
+            <div class="col-xs-12 col-md-4">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <input
+                type="tel"
+                name="telefoon"
+                id="telefoon"
+                placeholder="Telefoon"
+              />
+            </div>
+            <div class="col-6">
+              <button id="submit" class="secondary">Neem contact op</button>
+            </div>
+          </form>
         </div>
+      </div>
     </section>
     <section class="mockup container">
-        <p class="subheading">recente projecten</p>
-        <h2>Website realisaties</h2>
-        <div class="mockup__container">
-            <div class="mockup__desktop">
-                <img src="/img/desktop.png" alt="" srcset="">
-                <div class="mockup__desktop--overlay">
-                    <img src="https://source.unsplash.com/1600x900/?webdesign" alt="" loading="lazy">
-                </div>
-            </div>
-            <div class="mockup__tablet">
-                <img src="/img/tablet.png" alt="" srcset="">
-                <div class="mockup__tablet--overlay">
-                    <img src="https://source.unsplash.com/1600x900/?webdesign" alt="" loading="lazy">
-                </div>
-            </div>
-            <div class="mockup__smartphone">
-                <img src="/img/smartphone.png" alt="" srcset="">
-                <div class="mockup__smartphone--overlay">
-                    <img src="https://source.unsplash.com/1600x900/?webdesign" alt="" loading="lazy">
-                </div>
-            </div>
+      <p class="subheading">recente projecten</p>
+      <h2>Website realisaties</h2>
+      <div class="mockup__container">
+        <div class="mockup__desktop">
+          <img src="/img/desktop.png" alt="" srcset="" />
+          <div class="mockup__desktop--overlay">
+            <img
+              src="https://source.unsplash.com/1600x900/?webdesign"
+              alt=""
+              loading="lazy"
+            />
+          </div>
         </div>
-        
+        <div class="mockup__tablet">
+          <img src="/img/tablet.png" alt="" srcset="" />
+          <div class="mockup__tablet--overlay">
+            <img
+              src="https://source.unsplash.com/1600x900/?webdesign"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="mockup__smartphone">
+          <img src="/img/smartphone.png" alt="" srcset="" />
+          <div class="mockup__smartphone--overlay">
+            <img
+              src="https://source.unsplash.com/1600x900/?webdesign"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
     </section>
     <section class="blog container">
-        <div class="blog__item">
-            <div class="blog__date">25/1/2021</div>
-            <div class="blog__title">Een website bouwen, hoe ga je te werk?</div>
+      <div class="blog__item">
+        <div class="blog__date">25/1/2021</div>
+        <div class="blog__title">Een website bouwen, hoe ga je te werk?</div>
+      </div>
+      <div class="blog__item">
+        <div class="blog__date">25/1/2021</div>
+        <div class="blog__title">
+          Waarom een website een must is voor uw bedrijf!
         </div>
-        <div class="blog__item">
-            <div class="blog__date">25/1/2021</div>
-            <div class="blog__title">Waarom een website een must is voor uw bedrijf!</div>
-        </div>
-        <div class="blog__item">
-            <div class="blog__date">25/1/2021</div>
-            <div class="blog__title">On-page SEO optimalisatie</div>
-        </div>
-        <button class="btn btn-primary">Bekijk alle blogs</button>
+      </div>
+      <div class="blog__item">
+        <div class="blog__date">25/1/2021</div>
+        <div class="blog__title">On-page SEO optimalisatie</div>
+      </div>
+      <button class="btn btn-primary">Bekijk alle blogs</button>
     </section>
     <section class="contact">
-        <h2>Contacteer ons vrijblijvend</h2>
-        <p class="subheading">Laat hier je gegevens achter, we bellen je op</p>
-        <form class="contact">
-            <input type="text" id="naam" placeholder="Naam">
-            <input type="email" name="email" id="email" placeholder="E-mail">
-            <input type="tel" name="telefoon" id="telefoon" placeholder="Telefoon">
-            <button id="submit">Neem contact op</button>
-        </form>
+      <h2>Contacteer ons vrijblijvend</h2>
+      <p class="subheading">Laat hier je gegevens achter, we bellen je op</p>
+      <form class="contact">
+        <input type="text" id="naam" placeholder="Naam" />
+        <input type="email" name="email" id="email" placeholder="E-mail" />
+        <input
+          type="tel"
+          name="telefoon"
+          id="telefoon"
+          placeholder="Telefoon"
+        />
+        <button id="submit">Neem contact op</button>
+      </form>
     </section>
     <footer class="footer">
-        <div class="container">
-            <div class="grid">
-                <div class="grid__contactgegevens">
-                    <img src="img/logo.svg" alt="Logo">
-                    <h2>Contact</h2>
-                    <a href="tel:0032478610181">Telefoon: +32(0) 478 61 01 81</a>
-                    <a href="mailto:info@studiowebvision.be">E-mail: info@studiowebvision.be</a>
-                    <div class="social-links">
-                        <a href=""><img src="" alt=""></a>
-                        <a href=""><img src="" alt=""></a>
-                    </div>
-                </div>
-                <div class="grid__pages">
-                    <h2>Pagina's</h2>
-                    <ul class="pages__list">
-                        <li><a href="#">Website laten maken</a></li>
-                        <li><a href="">Webshop laten maken</a></li>
-                        <li><a href="">Zoekmachine optimalisatie</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="grid__pages">
-                    <h2>Blog's</h2>
-                    <ul class="pages__list">
-                        <li><a href="#">Seo</a></li>
-                        <li><a href="">Websites</a></li>
-                        <li><a href="">Termen</a></li>
-                    </ul>
-                </div>
-                <div class="grid__pages">
-                    <h2>Klantenpaneel</h2>
-                    <ul class="pages__list">
-                        <li><a href="#">Login</a></li>
-                        <li><a href="">Handleidingen</a></li>
-                        <li><a href="">E-mail instellen</a></li>
-                        <li><a href="">Hulp op afstand</a></li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="footer_links">
-                    <a href="#">Privacybeleid</a><a href="">Cookiebeleid</a>
-                </div>
+      <div class="container">
+        <div class="grid">
+          <div class="grid__contactgegevens">
+            <img src="img/logo.svg" alt="Logo" />
+            <h2>Contact</h2>
+            <a href="tel:0032478610181">Telefoon: +32(0) 478 61 01 81</a>
+            <a href="mailto:info@studiowebvision.be"
+              >E-mail: info@studiowebvision.be</a
+            >
+            <div class="social-links">
+              <a href=""><img src="" alt="" /></a>
+              <a href=""><img src="" alt="" /></a>
             </div>
+          </div>
+          <div class="grid__pages">
+            <h2>Pagina's</h2>
+            <ul class="pages__list">
+              <li><a href="#">Website laten maken</a></li>
+              <li><a href="">Webshop laten maken</a></li>
+              <li><a href="">Zoekmachine optimalisatie</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="grid__pages">
+            <h2>Blog's</h2>
+            <ul class="pages__list">
+              <li><a href="#">Seo</a></li>
+              <li><a href="">Websites</a></li>
+              <li><a href="">Termen</a></li>
+            </ul>
+          </div>
+          <div class="grid__pages">
+            <h2>Klantenpaneel</h2>
+            <ul class="pages__list">
+              <li><a href="#">Login</a></li>
+              <li><a href="">Handleidingen</a></li>
+              <li><a href="">E-mail instellen</a></li>
+              <li><a href="">Hulp op afstand</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div class="footer_links">
+            <a href="#">Privacybeleid</a><a href="">Cookiebeleid</a>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="/js/app.js"></script>
-</body>
+  </body>
 </html>
