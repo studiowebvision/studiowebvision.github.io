@@ -38,16 +38,16 @@
 
             @include respond-to('medium'){
                 display: flex;
-                justify-content: center;
+                justify-content: end;
                 align-items: center;
                 padding: 0;
             }
 
             li{
-                padding: 1rem;
+                padding: 1rem 2rem;
                 text-transform: uppercase;
                 letter-spacing: 2px;
-                font-size: 1.8rem;
+                font-size: 1.7rem;
                 opacity: 0;
                 position: relative;
                 @include respond-to('medium'){
@@ -85,7 +85,8 @@
                     }
                 }
 
-                &:hover{
+                &:hover,
+                &:active{
                     background-color: $lightBlue;
                     border-radius: 10px;
                     
