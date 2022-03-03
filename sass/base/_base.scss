@@ -1,42 +1,42 @@
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-html{
-     // This defines what 1rem is
-    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
-    scroll-behavior: smooth;
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  scroll-behavior: smooth;
 }
 
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
 }
 
 a:link,
-a:visited{
-    text-decoration: none;
-    color: inherit;
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Fields */
-input:not([type=button]):not([type=reset]):not([type=submit]):not([type=image]),
+input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="image"]),
 textarea {
   border-radius: 8px;
   padding: 1rem 1.4rem;
   font-size: 1.4rem;
-  box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   border: none;
   font-family: inherit;
-  &:focus{
-      outline: 3px solid rgba($lightBlue, .5);
+  &:focus {
+    outline: 3px solid rgba($lightBlue, 0.5);
   }
 }

@@ -1,7 +1,8 @@
-body{
-    font-family: $fontFamily;
-    font-size: $fontSize;
-    color: $text;
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $text;
+  letter-spacing: 0.5px;
 }
 
 p,
@@ -10,7 +11,7 @@ h2,
 h3,
 h4,
 h5,
-h6{
-    color: inherit;
-    margin-bottom: 2rem;
+h6 {
+  color: inherit;
+  margin-bottom: 2rem;
 }
