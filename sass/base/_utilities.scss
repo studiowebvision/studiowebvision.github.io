@@ -4,6 +4,12 @@
   padding: 0 2rem;
 }
 
+.container-fluid {
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
 /* Line seperator */
 .seperator {
   height: 0.3rem;
@@ -24,7 +30,8 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"],
-.btn {
+.btn,
+.bs .btn {
   padding: 1rem 1.5rem;
   font-weight: 600;
   font-family: inherit;
@@ -52,4 +59,10 @@ input[type="reset"],
       background: rgba($lightBlue, 0.6);
     }
   }
+}
+
+/* background */
+
+.bg-lightgray {
+  background-color: #fbfbfb;
 }

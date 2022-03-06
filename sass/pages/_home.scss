@@ -18,13 +18,11 @@
   top: 0;
 
   &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     z-index: 1;
     text-align: center;
-    display: flex;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-55%);
 
     .seperator {
       margin: 2rem auto;
@@ -47,12 +45,12 @@
   }
 
   &__btn {
-    border: 1px $white solid;
+    border: 2px $white solid;
     border-radius: 2.25rem;
     padding: 1.3rem 3.2rem;
     display: inline-block;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   &__video {
@@ -63,7 +61,6 @@
     height: 80vh;
     overflow: hidden;
 
-    iframe,
     video {
       width: 100%;
       object-fit: cover;
@@ -87,11 +84,9 @@
     margin-top: -12rem;
     z-index: 2;
     position: relative;
-    padding-bottom: 10rem;
-    display: grid;
+    padding-bottom: 8rem;
+    display: flex;
     gap: 2.5rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, min-content);
   }
 
   &__item {
@@ -105,6 +100,142 @@
       font-weight: normal;
       letter-spacing: 0.3px;
       font-family: $fontHeading;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $linkColor;
+    }
+
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+
+    i {
+      padding-left: 1rem;
+      color: $linkColor;
+    }
+  }
+}
+
+.aboutus {
+  padding-bottom: 10rem;
+
+  h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: $darkBlue;
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  &__content {
+    p {
+      text-align: justify;
+      margin-bottom: 2.8rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 2.5rem;
+      margin-bottom: 2rem;
+
+      &::before {
+        content: "\f105";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        position: absolute;
+        color: $lightBlue;
+        font-size: 2.2rem;
+        top: -5px;
+        left: 0;
+      }
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 400;
+        font-family: $fontHeading;
+        color: $darkBlue;
+      }
+    }
+    line-height: 1.5;
+    font-size: 1.7rem;
+  }
+}
+
+.chooseus {
+  background: #fbfbfb;
+  //   url(http://themes.framework-y.com/whitelabel/wp-content/uploads/2016/12/mk-10.png);
+  // background-repeat: no-repeat;
+  // background-position: 100% 0;
+  padding: 5rem 0 10rem 0;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto !important;
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: $darkBlue;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    text-align: justify;
+    margin-bottom: 2.8rem;
+    padding-right: 5rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 2rem;
+
+    &::before {
+      content: "\f105";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      color: $lightBlue;
+      font-size: 2.2rem;
+      top: -5px;
+      left: 0;
+    }
+
+    h3 {
+      font-size: 2rem;
+      font-weight: 400;
+      font-family: $fontHeading;
+      color: $darkBlue;
     }
   }
 }
@@ -134,82 +265,6 @@
           font-size: 1.8rem;
         }
       }
-    }
-  }
-}
-
-/* Workflow section */
-.workflow {
-  background: url("../img/workflow-background.svg") no-repeat;
-  background-size: cover;
-  padding-bottom: 2rem;
-  text-align: center;
-
-  &__container {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 3rem;
-  }
-
-  &__item {
-    text-align: center;
-  }
-
-  &__timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__circle {
-    text-align: center;
-    color: $white;
-    background-color: $darkBlue;
-    width: 5.7rem;
-    height: 5.7rem;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-
-    &::before,
-    &::after {
-      content: "";
-      width: 100%;
-      height: 5px;
-      position: absolute;
-      background-image: url("../img/dots.png");
-    }
-
-    &::before {
-      left: -150%;
-    }
-
-    &::after {
-      right: -150%;
-    }
-  }
-
-  &__heading {
-    h2 {
-      color: $darkBlue;
-      font-size: 1.9rem;
-      margin-top: 2rem;
-      margin-bottom: 0;
-    }
-  }
-
-  &__description {
-    margin-left: auto;
-    padding: 2rem;
-
-    p {
-      font-size: 1.6rem;
-      font-weight: 300;
-      line-height: 1.5;
     }
   }
 }

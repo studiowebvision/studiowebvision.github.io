@@ -1,5 +1,14 @@
-// bootstrap
-// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+// fontawesome
+$fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+//bootstrap in prefix class
+.bs {
+  @import "vendor/bootstrap/bootstrap";
+}
 
 @import "abstracts/functions";
 @import "abstracts/mixins";
