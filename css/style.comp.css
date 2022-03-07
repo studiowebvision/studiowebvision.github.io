@@ -5368,7 +5368,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("~@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2") format("woff2"), url("~@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype"); }
+  src: url("../fonts/webfonts/fa-solid-900.woff2") format("woff2"), url("../fonts/webfonts/fa-solid-900.ttf") format("truetype"); }
 
 .fas,
 .fa-solid {
@@ -5388,7 +5388,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("~@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"), url("~@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype"); }
+  src: url("../fonts/webfonts/fa-brands-400.woff2") format("woff2"), url("../fonts/webfonts/fa-brands-400.ttf") format("truetype"); }
 
 .fab,
 .fa-brands {
@@ -6812,7 +6812,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("~@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2") format("woff2"), url("~@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf") format("truetype"); }
+  src: url("../fonts/webfonts/fa-regular-400.woff2") format("woff2"), url("../fonts/webfonts/fa-regular-400.ttf") format("truetype"); }
 
 .far,
 .fa-regular {
@@ -14011,61 +14011,8 @@ input[type="reset"],
         color: #53bde8;
         font-size: 1.8rem; }
 
+/* Projecten */
+.projects {
+  padding: 8rem 0; }
+
 /* Mockup Devices */
-.mockup {
-  text-align: center;
-  padding: 5rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .mockup__container {
-    max-width: 80vw;
-    width: 100%;
-    position: relative; }
-  .mockup__tablet {
-    position: absolute;
-    bottom: 3vh;
-    left: -5vw;
-    width: 250px; }
-    .mockup__tablet--overlay {
-      width: 80%;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 88%;
-      position: absolute;
-      top: 6%;
-      overflow: hidden;
-      border-radius: 5px; }
-    .mockup__tablet--overlay > * {
-      height: 100%;
-      object-fit: cover; }
-  .mockup__desktop {
-    max-width: 80vw;
-    position: relative; }
-    .mockup__desktop--overlay {
-      width: 82%;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 59%;
-      position: absolute;
-      top: 7%;
-      overflow: hidden; }
-    .mockup__desktop--overlay > * {
-      height: 100%; }
-  .mockup__smartphone {
-    position: absolute;
-    bottom: 3vh;
-    right: -2%;
-    width: 150px; }
-    .mockup__smartphone--overlay {
-      width: 65%;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 83%;
-      position: absolute;
-      top: 8%;
-      overflow: hidden;
-      border-radius: 5px; }
-    .mockup__smartphone--overlay > * {
-      height: 100%;
-      object-fit: cover; }

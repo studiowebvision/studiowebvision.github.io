@@ -246,82 +246,87 @@
   }
 }
 
-/* Mockup Devices */
-.mockup {
-  text-align: center;
-  padding: 5rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  &__container {
-    max-width: 80vw;
-    width: 100%;
-    position: relative;
-  }
-
-  &__tablet {
-    position: absolute;
-    bottom: 3vh;
-    left: -5vw;
-    width: 250px;
-
-    &--overlay {
-      width: 80%;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 88%;
-      position: absolute;
-      top: 6%;
-      overflow: hidden;
-      border-radius: 5px;
-    }
-
-    &--overlay > * {
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &__desktop {
-    max-width: 80vw;
-    position: relative;
-
-    &--overlay {
-      width: 82%;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 59%;
-      position: absolute;
-      top: 7%;
-      overflow: hidden;
-    }
-
-    &--overlay > * {
-      height: 100%;
-    }
-  }
-
-  &__smartphone {
-    position: absolute;
-    bottom: 3vh;
-    right: -2%;
-    width: 150px;
-
-    &--overlay {
-      width: 65%;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 83%;
-      position: absolute;
-      top: 8%;
-      overflow: hidden;
-      border-radius: 5px;
-    }
-
-    &--overlay > * {
-      height: 100%;
-      object-fit: cover;
-    }
-  }
+/* Projecten */
+.projects {
+  padding: 8rem 0;
 }
+
+/* Mockup Devices */
+// .mockup {
+//   text-align: center;
+//   padding: 5rem 0;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+//   &__container {
+//     max-width: 80vw;
+//     width: 100%;
+//     position: relative;
+//   }
+
+//   &__tablet {
+//     position: absolute;
+//     bottom: 3vh;
+//     left: -5vw;
+//     width: 250px;
+
+//     &--overlay {
+//       width: 80%;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       height: 88%;
+//       position: absolute;
+//       top: 6%;
+//       overflow: hidden;
+//       border-radius: 5px;
+//     }
+
+//     &--overlay > * {
+//       height: 100%;
+//       object-fit: cover;
+//     }
+//   }
+
+//   &__desktop {
+//     max-width: 80vw;
+//     position: relative;
+
+//     &--overlay {
+//       width: 82%;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       height: 59%;
+//       position: absolute;
+//       top: 7%;
+//       overflow: hidden;
+//     }
+
+//     &--overlay > * {
+//       height: 100%;
+//     }
+//   }
+
+//   &__smartphone {
+//     position: absolute;
+//     bottom: 3vh;
+//     right: -2%;
+//     width: 150px;
+
+//     &--overlay {
+//       width: 65%;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       height: 83%;
+//       position: absolute;
+//       top: 8%;
+//       overflow: hidden;
+//       border-radius: 5px;
+//     }
+
+//     &--overlay > * {
+//       height: 100%;
+//       object-fit: cover;
+//     }
+//   }
+// }
