@@ -13570,9 +13570,20 @@ body {
   color: #424242;
   letter-spacing: 0.5px; }
 
-p,
-h1,
-.bs .h1,
+h1, .bs .h1,
+h2,
+.bs .h2,
+h3,
+.bs .h3,
+h4,
+.bs .h4,
+h5,
+.bs .h5,
+h6,
+.bs .h6 {
+  font-family: "DM Sans", sans-serif; }
+
+p, h1, .bs .h1,
 h2,
 .bs .h2,
 h3,
@@ -13588,7 +13599,7 @@ h6,
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1320px;
   padding: 0 2rem; }
 
 .container-fluid, .bs .container-sm, .bs .container-md, .bs .container-lg, .bs .container-xl, .bs .container-xxl {
@@ -13892,7 +13903,8 @@ input[type="reset"],
   gap: 2.5rem; }
 
 .card__item {
-  background-color: #fff; }
+  background-color: #fff;
+  flex: 1; }
   .card__item img {
     width: 8rem; }
   
@@ -13914,61 +13926,21 @@ input[type="reset"],
     padding-left: 1rem;
     color: #3589bd; }
 
-.aboutus {
-  padding-bottom: 10rem; }
-  .aboutus h2, .aboutus .bs .h2, .bs .aboutus .h2 {
-    font-size: 2.8rem;
-    font-weight: 600;
-    color: #205271;
-    margin-bottom: 2rem; }
-  .aboutus__img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px; }
-  .aboutus__content {
-    line-height: 1.5;
-    font-size: 1.7rem; }
-    .aboutus__content p {
-      text-align: justify;
-      margin-bottom: 2.8rem; }
-    .aboutus__content ul {
-      list-style: none;
-      padding: 0;
-      margin: 0; }
-    .aboutus__content li {
-      position: relative;
-      padding-left: 2.5rem;
-      margin-bottom: 2rem; }
-      .aboutus__content li::before {
-        content: "\f105";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        position: absolute;
-        color: #53bde8;
-        font-size: 2.2rem;
-        top: -5px;
-        left: 0; }
-      .aboutus__content li h3, .aboutus__content li .bs .h3, .bs .aboutus__content li .h3 {
-        font-size: 2rem;
-        font-weight: 400;
-        font-family: "DM Sans", sans-serif;
-        color: #205271; }
-
 .chooseus {
   background: #fbfbfb;
-  padding: 5rem 0 10rem 0;
+  padding: 6rem 0 10rem 0;
   position: relative; }
   .chooseus__img {
     position: absolute;
     right: 0;
     top: 0;
-    width: auto !important;
-    height: 100%; }
+    height: 100%;
+    padding-top: 5rem; }
     .chooseus__img img {
       height: 100%; }
   .chooseus h2, .chooseus .bs .h2, .bs .chooseus .h2 {
-    font-size: 2.8rem;
-    font-weight: 600;
+    font-size: 3.2rem;
+    font-weight: 500;
     color: #205271;
     margin-bottom: 2rem; }
   .chooseus p {
@@ -13997,6 +13969,27 @@ input[type="reset"],
       font-weight: 400;
       font-family: "DM Sans", sans-serif;
       color: #205271; }
+
+.workflow {
+  background: #205271;
+  padding: 7rem 0;
+  color: #fff; }
+  .workflow h2, .workflow .bs .h2, .bs .workflow .h2 {
+    font-size: 4rem; }
+  .workflow .seperator {
+    margin-left: auto;
+    margin-right: auto; }
+  .workflow__container {
+    margin-top: 3rem; }
+  .workflow__item {
+    display: flex;
+    align-items: center;
+    gap: 2rem; }
+    .workflow__item span {
+      font-size: 8rem;
+      opacity: 0.3; }
+    .workflow__item h3, .workflow__item .bs .h3, .bs .workflow__item .h3 {
+      font-size: 3rem; }
 
 /* Section Features */
 .features {

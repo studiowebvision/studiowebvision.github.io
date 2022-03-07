@@ -91,6 +91,8 @@
 
   &__item {
     background-color: $white;
+    flex: 1;
+
     img {
       width: 8rem;
     }
@@ -120,76 +122,17 @@
   }
 }
 
-.aboutus {
-  padding-bottom: 10rem;
-
-  h2 {
-    font-size: 2.8rem;
-    font-weight: 600;
-    color: $darkBlue;
-    margin-bottom: 2rem;
-  }
-
-  &__img {
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-  }
-
-  &__content {
-    p {
-      text-align: justify;
-      margin-bottom: 2.8rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    li {
-      position: relative;
-      padding-left: 2.5rem;
-      margin-bottom: 2rem;
-
-      &::before {
-        content: "\f105";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        position: absolute;
-        color: $lightBlue;
-        font-size: 2.2rem;
-        top: -5px;
-        left: 0;
-      }
-
-      h3 {
-        font-size: 2rem;
-        font-weight: 400;
-        font-family: $fontHeading;
-        color: $darkBlue;
-      }
-    }
-    line-height: 1.5;
-    font-size: 1.7rem;
-  }
-}
-
 .chooseus {
   background: #fbfbfb;
-  //   url(http://themes.framework-y.com/whitelabel/wp-content/uploads/2016/12/mk-10.png);
-  // background-repeat: no-repeat;
-  // background-position: 100% 0;
-  padding: 5rem 0 10rem 0;
+  padding: 6rem 0 10rem 0;
   position: relative;
 
   &__img {
     position: absolute;
     right: 0;
     top: 0;
-    width: auto !important;
     height: 100%;
+    padding-top: 5rem;
 
     img {
       height: 100%;
@@ -197,8 +140,8 @@
   }
 
   h2 {
-    font-size: 2.8rem;
-    font-weight: 600;
+    font-size: 3.2rem;
+    font-weight: 500;
     color: $darkBlue;
     margin-bottom: 2rem;
   }
@@ -236,6 +179,40 @@
       font-weight: 400;
       font-family: $fontHeading;
       color: $darkBlue;
+    }
+  }
+}
+
+.workflow {
+  background: $darkBlue;
+  padding: 7rem 0;
+  color: $white;
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .seperator {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__container {
+    margin-top: 3rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    span {
+      font-size: 8rem;
+      opacity: 0.3;
+    }
+
+    h3 {
+      font-size: 3rem;
     }
   }
 }
