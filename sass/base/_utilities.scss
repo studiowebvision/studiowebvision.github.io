@@ -25,44 +25,12 @@
   font-weight: 600;
 }
 
-/* Buttons */
-button,
-input[type="submit"],
-input[type="button"],
-input[type="reset"],
-.btn,
-.bs .btn {
-  padding: 1rem 1.5rem;
-  font-weight: 600;
-  font-family: inherit;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-  border: none;
-  border-radius: 0.8rem;
-  transition: all 300ms ease-in;
-  margin-top: 1rem;
-
-  &.primary {
-    background: $darkBlue;
-    color: $white;
-
-    &:hover {
-      background: rgba($darkBlue, 0.6);
-    }
-  }
-
-  &.secondary {
-    background: $lightBlue;
-    color: $white;
-
-    &:hover {
-      background: rgba($lightBlue, 0.6);
-    }
-  }
-}
-
 /* background */
 
 .bg-lightgray {
   background-color: #fbfbfb;
+}
+
+.bg-lightblue {
+  background-color: #eff6fa;
 }

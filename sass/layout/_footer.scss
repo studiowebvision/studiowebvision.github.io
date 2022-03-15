@@ -1,0 +1,47 @@
+.footer {
+  padding: 5rem 0;
+  background-color: $darkBlue;
+  color: #fff;
+
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__icons {
+    @include list-reset();
+    margin-top: 2rem;
+
+    li {
+      display: inline-block;
+      margin-right: 0.5rem;
+      a {
+        background-color: $linkColor;
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+      }
+
+      i {
+        font-size: $footerIconSize;
+      }
+    }
+  }
+
+  &__logo {
+    max-width: 220px;
+  }
+
+  &__pages {
+    @include list-reset();
+    margin-top: 1rem;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

@@ -12,6 +12,11 @@ h4,
 h5,
 h6 {
   font-family: $fontHeading;
+  color: $headingColor;
+}
+
+p {
+  color: inherit;
 }
 
 p,
@@ -21,6 +26,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: inherit;
   margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
 }

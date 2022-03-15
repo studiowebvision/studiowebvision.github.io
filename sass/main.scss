@@ -5,23 +5,37 @@ $fa-font-path: "../fonts/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 
-//bootstrap in prefix class
-.bs {
-  @import "vendor/bootstrap/bootstrap";
-}
+// bootstrap grid
+@import "vendor/bootstrap/functions";
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+@import "vendor/bootstrap/grid";
+
+// slick carousel
+$slick-loader-path: "../img/";
+$slick-font-path: "../fonts/webfonts/";
+
+@import "vendor/slick/slick-theme.scss";
+@import "vendor/slick/slick.scss";
 
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "base/fonts";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
+// general layout
+@import "layout/header";
+@import "layout/footer";
+
+// components
+@import "components/buttons";
 @import "components/nav_bar";
 @import "components/card";
 @import "components/call_to_action";
 
-@import "layout/grid";
-
+// pages
 @import "pages/home";

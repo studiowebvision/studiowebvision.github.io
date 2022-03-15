@@ -1,26 +1,15 @@
-// FONTS
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap");
-
-@font-face {
-  font-family: nevis;
-  src: url(../fonts/nevis.ttf);
-}
-
-@font-face {
-  font-family: Gotham;
-  src: url(../../fonts/Gotham-Book-Regular.otf);
-}
-
-$fontHeading: "DM Sans", sans-serif;
-$fontSize: 1.8rem;
-$fontFamily: "Poppins", sans-serif;
+$fontHeading: "Montserrat", sans-serif;
+$fontFamily: "Visby CF", sans-serif;
+$fontSize: 1.9rem;
 
 $darkBlue: #205271;
 $lightBlue: #53bde8;
+$black: #000;
 
 $white: #fff;
-$text: #424242;
+$text: #666666;
+$headingColor: #222222;
 $linkColor: #3589bd;
+
+$footerIconSize: 1.8rem;
+$iconPadding: 1rem;

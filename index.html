@@ -2,15 +2,15 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <!-- <base href="https://studiowebvision.github.io/site/"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Studio Webvision - Webdesign & online marketing</title>
   </head>
   <body>
-    <header class="header-intro">
-      <div class="navbar container">
+    <header class="header header--home">
+      <nav class="navbar container">
         <a href="/" class="navbar__logo"
           ><img src="img/logo.svg" alt="Logo"
         /></a>
@@ -18,7 +18,7 @@
         <label for="mobile" class="navbar__button">
           <span>&nbsp;</span>
         </label>
-        <nav class="navbar__navigation">
+        <nav class="navbar__navigation navbar__navigation--home">
           <ul>
             <li><a href="#">Websites</a></li>
             <li><a href="#">Webshops</a></li>
@@ -27,8 +27,8 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-      </div>
-      <section class="hero">
+      </nav>
+      <div class="hero">
         <div class="hero__video">
           <video autoplay muted loop poster="video/video.png" preload="auto">
             <source src="video/Websites.mp4" type="video/mp4" />
@@ -42,178 +42,180 @@
               Op zoek naar een website of webshop voor uw bedrijf? <br />Wij
               zorgen voor een resultaatgerichte website op maat van uw bedrijf.
             </p>
-            <a href="#" class="hero__btn btn">Offerte aanvragen</a>
+            <a href="#" class="btn btn--white">Afspraak maken</a>
           </div>
         </div>
-      </section>
+      </div>
     </header>
-    <section class="card bg-lightgray">
+    <section class="section">
       <div class="container">
-        <div class="card__home">
+        <div class="card">
           <div class="card__item">
-            <img src="img/responsive.svg" alt="Responsive" />
-            <h2>Websites</h2>
-            <p>Gebruiksvriendelijke website of webshop op ieder toestel.</p>
-            <a class="card__link" href="#">
-              <span>Meer info</span><i class="fa-solid fa-angle-right"></i>
+            <a href="#" class="card__link">
+              <img src="img/responsive.svg" alt="Responsive" />
+              <h2>Websites</h2>
+              <p>Gebruiksvriendelijke website of webshop op ieder toestel.</p>
+              <span class="card__icon"> Meer info </span>
             </a>
           </div>
           <div class="card__item">
-            <img src="img/online-vindbaarheid.svg" alt="Online marketing" />
-            <h2>Online marketing</h2>
-            <p>Bereik meer klanten met een website die hoog scoort in Google</p>
-            <a class="card__link" href="#">
-              <span>Meer info</span><i class="fa-solid fa-angle-right"></i>
+            <a href="#" class="card__link">
+              <img src="img/online-vindbaarheid.svg" alt="Online marketing" />
+              <h2>Online marketing</h2>
+              <p>
+                Bereik meer klanten met een website die hoog scoort in Google.
+              </p>
+              <span class="card__icon">Meer info</span>
             </a>
           </div>
           <div class="card__item">
-            <img src="img/webshop.svg" alt="SEO - Zoekmachine optimalisatie" />
-            <h2>Webshops</h2>
-            <p>Verkoop online je producten met een eigen webwinkel.</p>
-            <a class="card__link" href="#">
-              <span>Meer info</span><i class="fa-solid fa-angle-right"></i>
+            <a href="" class="card__link">
+              <img
+                src="img/webshop.svg"
+                alt="SEO - Zoekmachine optimalisatie"
+              />
+              <h2>Webshops</h2>
+              <p>Verkoop online je producten met een eigen webwinkel.</p>
+              <span class="card__icon"> Meer info </span>
             </a>
           </div>
         </div>
       </div>
     </section>
-    <section class="chooseus">
-      <div class="container bs">
+    <section class="about section">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-7">
-            <h2>Waarom kiezen voor Studio Webvision?</h2>
+          <div class="col-md-5" data-aos="fade-right">
+            <img src="/img/meeting-klant.jpg" alt="" class="about__img" />
+          </div>
+          <div class="col-md-7 about__content">
+            <h2>Waarom kiezen voor <br />Studio Webvision?</h2>
             <p>
-              Ervaren en professionele web developer met 9 jaar ervaring in het
-              ontwikkelen, structureren en implementeren van interactieve
-              websites. Gaat innovatief om met technologie en zoekmachine
-              optimalisatie (SEO) waardoor websites hoger wordt gevonden in
-              zoekmachines zoals Google.
+              Van ontwerp tot strategie, we zorgen ervoor dat u bedrijf de beste
+              uitstraling krijgt. Samen bedenken wij met u over hoe uw bedrijf
+              online te presenteren. Na een verkennend gesprek stel ik een
+              concept voor op maat van uw web-project.
             </p>
             <ul>
-              <li>
-                <h3>Professioneel in webontwikkeling</h3>
-              </li>
-              <li>
-                <h3>Innovatief met technologie</h3>
-              </li>
-              <li>
-                <h3>Zoekmachine optimalisatie</h3>
-              </li>
+              <li>Professioneel in webontwikkeling</li>
+              <li>Innovatief met technologie</li>
+              <li>Zoekmachine optimalisatie</li>
             </ul>
             <a href="" class="btn primary">Plan een afspraak</a>
           </div>
-
-          <div class="col-md-5 chooseus__img">
-            <img
-              src="http://themes.framework-y.com/whitelabel/wp-content/uploads/2016/12/mk-10.png"
-              alt=""
-              class=""
-            />
-          </div>
         </div>
       </div>
     </section>
-    <!-- <section class="features container">
-      <div class="features__list">
-        <p class="subheading">wat we doen</p>
-        <h2>Resultaatgerichte websites</h2>
-        <ul>
-          <li>Gebruiksvriendelijke website op ieder toestel.</li>
-          <li>
-            Afbeelding of tekst aanpassen op uw website, met eenvoudige klikken.
-          </li>
-          <li>
-            Elke website wordt geoptimaliseerd voor zoekmachines zoals Google en
-            Bing.
-          </li>
-        </ul>
-      </div>
-    </section> -->
-    <section class="workflow">
-      <div class="container bs">
-        <div class="text-center">
-          <h2>Onze werkwijze</h2>
-          <div class="seperator"></div>
-          <p>Stap voor stap, samen met u</p>
-        </div>
-        <div class="workflow__container">
-          <div class="row g-5">
-            <div class="col-md-4 workflow__item">
-              <span>01</span>
-              <h3>Persoonlijk <br />contact</h3>
-            </div>
-            <div class="col-md-4 workflow__item">
-              <span>02</span>
-              <h3>Voorstel <br />op maat</h3>
-            </div>
-            <div class="col-md-4 workflow__item">
-              <span>03</span>
-              <h3>Duidelijke werkwijze</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="projects">
-      <div class="container bs">
-        <div class="row">
+    <section class="projects bg-lightblue section" data-aos="fade-left">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
           <div class="col-md-6">
             <h2>Ontdek projecten</h2>
+            <div class="seperator"></div>
           </div>
-          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <div class="projects__nav">
+              <span id="prevProject"
+                ><i class="fa-solid fa-angle-left"></i
+              ></span>
+              <span id="nextProject"
+                ><i class="fa-solid fa-angle-right"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="projects__slides-container" id="projects">
+          <div class="projects__item">
+            <div class="projects__img">
+              <a href="#" target="_blank">
+                <img src="/img/portfolio/vanrooswijckdesign.com_.png" alt="" />
+              </a>
+            </div>
+            <h3>Vanrooswijckdesign</h3>
+            <p>Website project</p>
+          </div>
+          <div class="projects__item">
+            <div class="projects__img">
+              <a href="#" target="_blank">
+                <img src="/img/portfolio/www.bistrodebolle.be_.png" alt="" />
+              </a>
+            </div>
+            <h3>Vanrooswijckdesign</h3>
+            <p>Website project</p>
+          </div>
+          <div class="projects__item">
+            <div class="projects__img">
+              <a href="#" target="_blank">
+                <img src="/img/portfolio/vanrooswijckdesign.com_.png" alt="" />
+              </a>
+            </div>
+            <h3>Vanrooswijckdesign</h3>
+            <p>Website project</p>
+          </div>
+          <div class="projects__item">
+            <div class="projects__img">
+              <a href="#" target="_blank">
+                <img src="/img/portfolio/vanrooswijckdesign.com_.png" alt="" />
+              </a>
+            </div>
+            <h3>Vanrooswijckdesign</h3>
+            <p>Website project</p>
+          </div>
+          <div class="projects__item">
+            <div class="projects__img">
+              <a href="#" target="_blank">
+                <img src="/img/portfolio/vanrooswijckdesign.com_.png" alt="" />
+              </a>
+            </div>
+            <h3>Vanrooswijckdesign</h3>
+            <p>Website project</p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="blog container">
-      <div class="blog__item">
-        <div class="blog__date">25/1/2021</div>
-        <div class="blog__title">Een website bouwen, hoe ga je te werk?</div>
-      </div>
-      <div class="blog__item">
-        <div class="blog__date">25/1/2021</div>
-        <div class="blog__title">
-          Waarom een website een must is voor uw bedrijf!
+    <section class="blog">
+      <div class="container">
+        <div class="blog__item">
+          <div class="blog__date">25/1/2021</div>
+          <div class="blog__title">Een website bouwen, hoe ga je te werk?</div>
         </div>
+        <div class="blog__item">
+          <div class="blog__date">25/1/2021</div>
+          <div class="blog__title">
+            Waarom een website een must is voor uw bedrijf!
+          </div>
+        </div>
+        <div class="blog__item">
+          <div class="blog__date">25/1/2021</div>
+          <div class="blog__title">On-page SEO optimalisatie</div>
+        </div>
+        <button class="btn btn-primary">Bekijk alle blogs</button>
       </div>
-      <div class="blog__item">
-        <div class="blog__date">25/1/2021</div>
-        <div class="blog__title">On-page SEO optimalisatie</div>
-      </div>
-      <button class="btn btn-primary">Bekijk alle blogs</button>
-    </section>
-    <section class="contact">
-      <h2>Contacteer ons vrijblijvend</h2>
-      <p class="subheading">Laat hier je gegevens achter, we bellen je op</p>
-      <form class="contact">
-        <input type="text" id="naam" placeholder="Naam" />
-        <input type="email" name="email" id="email" placeholder="E-mail" />
-        <input
-          type="tel"
-          name="telefoon"
-          id="telefoon"
-          placeholder="Telefoon"
-        />
-        <button id="submit">Neem contact op</button>
-      </form>
     </section>
     <footer class="footer">
       <div class="container">
-        <div class="grid">
-          <div class="grid__contactgegevens">
-            <img src="img/logo.svg" alt="Logo" />
-            <h2>Contact</h2>
-            <a href="tel:0032478610181">Telefoon: +32(0) 478 61 01 81</a>
-            <a href="mailto:info@studiowebvision.be"
-              >E-mail: info@studiowebvision.be</a
-            >
-            <div class="social-links">
-              <a href=""><img src="" alt="" /></a>
-              <a href=""><img src="" alt="" /></a>
-            </div>
+        <div class="row g-5">
+          <div class="col-12 col-lg-4">
+            <img src="img/logo.svg" class="mb-5 footer__logo" alt="Logo" />
+            <ul class="footer__pages">
+              <li><a href="#">Telefoon: +32(0) 478 61 01 81</a></li>
+              <li><a href="">E-mail: info@studiowebvision.be</a></li>
+            </ul>
+            <ul class="footer__icons">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-phone"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+            </ul>
           </div>
-          <div class="grid__pages">
+          <div class="col-12 col-lg-3">
             <h2>Pagina's</h2>
-            <ul class="pages__list">
+            <ul class="footer__pages">
               <li><a href="#">Website laten maken</a></li>
               <li><a href="">Webshop laten maken</a></li>
               <li><a href="">Zoekmachine optimalisatie</a></li>
@@ -221,17 +223,17 @@
               <li><a href="">Contact</a></li>
             </ul>
           </div>
-          <div class="grid__pages">
-            <h2>Blog's</h2>
-            <ul class="pages__list">
+          <div class="col-12 col-lg-2">
+            <h2>Blog</h2>
+            <ul class="footer__pages">
               <li><a href="#">Seo</a></li>
               <li><a href="">Websites</a></li>
               <li><a href="">Termen</a></li>
             </ul>
           </div>
-          <div class="grid__pages">
-            <h2>Klantenpaneel</h2>
-            <ul class="pages__list">
+          <div class="col-12 col-lg-3">
+            <h2>Support</h2>
+            <ul class="footer__pages">
               <li><a href="#">Login</a></li>
               <li><a href="">Handleidingen</a></li>
               <li><a href="">E-mail instellen</a></li>
@@ -245,6 +247,15 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--   <script src="/js/jquery.pagepiling.min.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/js/slick.min.js"></script>
     <script src="/js/app.js"></script>
   </body>
 </html>

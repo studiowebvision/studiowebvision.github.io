@@ -1,0 +1,41 @@
+/* Buttons */
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+.btn {
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.8rem;
+  transition: all 300ms ease-in;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+.btn {
+  &--primary {
+    background: $darkBlue;
+    color: $white;
+
+    &:hover {
+      background: rgba($darkBlue, 0.6);
+    }
+  }
+
+  &--secondary {
+    background: $lightBlue;
+    color: $white;
+
+    &:hover {
+      background: rgba($lightBlue, 0.6);
+    }
+  }
+
+  &--white {
+    background-color: transparent;
+    border: 2px solid #fff;
+  }
+}

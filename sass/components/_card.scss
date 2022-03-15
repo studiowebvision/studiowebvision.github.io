@@ -1,24 +1,78 @@
 .card {
+  z-index: 2;
+  position: relative;
+  padding: 10rem 0;
+  display: flex;
+  gap: 5.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include respond-to("medium") {
+    flex-direction: row;
+  }
+
   &__item {
+    position: relative;
+    overflow: hidden;
     padding: 2.5rem;
-    border-radius: 2rem;
-    box-shadow: 1px 1px 4.8rem 0 rgba(0, 0, 0, 0.2);
+    min-height: 28rem;
+    border-radius: 1rem;
     text-align: center;
+    border: 1px solid #efefef;
+    flex: 1;
+    max-width: 40rem;
 
     h1,
     h2,
     h3,
     h4,
     h5 {
-      color: $darkBlue;
-      margin-bottom: 1.5rem;
-      font-size: 2rem;
+      color: $black;
+      margin-bottom: 1.8rem;
+      font-size: 2.4rem;
+      font-weight: 500;
     }
 
     p {
       line-height: 1.5;
       font-size: 1.7rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.8rem;
     }
+
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__icon {
+    color: $lightBlue;
+    font-size: 1.8rem;
+    padding: 1.2rem 2rem;
+    opacity: 1;
+    transition: font-size ease-in-out 200ms;
+
+    &::after {
+      content: "\f105";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 600;
+      padding-left: 0.5rem;
+      font-size: 1.6rem;
+    }
+
+    &:link,
+    &:visited {
+      color: #fff;
+    }
+  }
+
+  &__item:hover &__icon {
+    font-weight: 700;
+    font-size: 1.9rem;
   }
 }
