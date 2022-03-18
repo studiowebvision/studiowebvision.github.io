@@ -32,9 +32,9 @@
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-60%) translateX(-50%);
     @include respond-to("medium") {
-      transform: translateY(-45%) translateX(-50%);
+      transform: translateY(-38%) translateX(-50%);
     }
   }
 
@@ -52,7 +52,7 @@
       }
     }
     p {
-      margin: 4rem 0;
+      margin: 3rem 0;
       line-height: 1.8;
       @include respond-to("medium") {
         font-size: 1.9rem;
@@ -71,7 +71,7 @@
 }
 
 .intro {
-  padding: 14.5vh 0;
+  padding: 8vh 0;
 }
 
 .about {

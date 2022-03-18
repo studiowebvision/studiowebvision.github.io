@@ -7961,48 +7961,84 @@ h2 {
   background-color: #eff6fa; }
 
 .header {
-  padding-top: 3rem;
   position: relative;
-  min-height: 520px; }
+  min-height: 550px; }
   .header--home {
     height: 100vh; }
     @media (min-width: 64em) {
       .header--home {
-        height: 50vh; } }
+        height: 60vh; } }
 
 .footer {
-  padding: 5rem 0;
+  padding: 6rem 0;
   background-color: #205271;
   color: #fff; }
+  .footer hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); }
   .footer h2 {
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem; }
-  .footer__icons {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.3rem;
+    color: #fff;
+    position: relative; }
+    .footer h2::before {
+      content: "";
+      width: 3px;
+      height: 100%;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      background-color: #53bde8; }
+  .footer__social-icons {
     margin: 0;
     padding: 0;
     list-style: none;
     margin-top: 2rem; }
-    .footer__icons li {
+    .footer__social-icons li {
       display: inline-block;
       margin-right: 0.5rem; }
-      .footer__icons li a {
+      .footer__social-icons li a {
         background-color: #3589bd;
         display: inline-block;
         padding: 0.8rem 1.5rem;
         border-radius: 5px; }
-      .footer__icons li i {
+      .footer__social-icons li i {
         font-size: 1.8rem; }
   .footer__logo {
     max-width: 220px; }
-  .footer__pages {
+  .footer__links {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-top: 1rem; }
-    .footer__pages li {
-      margin-bottom: 0.5rem; }
-      .footer__pages li a {
-        font-size: 1.6rem; }
+    margin-top: 3rem; }
+    .footer__links li {
+      margin-bottom: 1rem; }
+      .footer__links li::before {
+        content: "\f105";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 600;
+        padding-right: 1.5rem;
+        font-size: 1.2rem; }
+      .footer__links li a {
+        font-size: 1.5rem; }
+      .footer__links li a:hover {
+        color: #53bde8; }
+  .footer__gdpr {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .footer__gdpr li {
+      display: inline-block; }
+      .footer__gdpr li a {
+        font-size: 1.5rem;
+        padding-right: 1.5rem; }
+      .footer__gdpr li a:hover {
+        color: #53bde8; }
 
 /* Buttons */
 button,
@@ -8034,10 +8070,11 @@ input[type="reset"],
 
 .btn--white {
   background-color: transparent;
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  margin-top: 0; }
 
 .navbar {
-  padding: 1.5rem inherit;
+  padding: 3rem 0;
   display: flex;
   position: relative;
   align-items: center;
@@ -8046,6 +8083,7 @@ input[type="reset"],
   z-index: 99;
   /* Nav Logo */
   /* Nav Bar */
+  /* Nav Bar Item */
   /* Nav Mobile Toggler */ }
   .navbar__logo {
     width: 20rem;
@@ -8081,25 +8119,31 @@ input[type="reset"],
         align-items: center;
         padding: 0; } }
   .navbar__item {
-    padding: 1rem 3rem;
-    text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    font-size: 1.7rem;
-    position: relative; }
+    position: relative;
+    opacity: 0; }
     @media (min-width: 64em) {
       .navbar__item {
-        opacity: 1;
-        padding: 1rem 2rem; } }
+        opacity: 1; } }
+    .navbar__item a {
+      padding: 1rem 3rem;
+      display: inline-block;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 2rem; }
+      @media (min-width: 64em) {
+        .navbar__item a {
+          padding: 1rem 2.5rem; } }
     .navbar__item a:link,
     .navbar__item a:visited {
-      color: #fff;
-      display: block; }
+      color: #fff; }
     .navbar__item:not(:last-child) {
       margin-bottom: 2rem; }
       @media (min-width: 64em) {
         .navbar__item:not(:last-child) {
           margin-bottom: 0; } }
+    .navbar__item--cta a {
+      border: 2px solid #fff;
+      border-radius: 0.8rem; }
     @media (min-width: 48em) {
       .navbar__item::after {
         content: "";
@@ -8116,16 +8160,12 @@ input[type="reset"],
         transition: transform 300ms ease-in-out;
         width: 0px; } }
     .navbar__item:hover, .navbar__item:active {
-      background-color: #53bde8;
-      border-radius: 10px; }
-      @media (min-width: 64em) {
-        .navbar__item:hover, .navbar__item:active {
-          background-color: transparent; }
-          .navbar__item:hover::after, .navbar__item:active::after {
-            content: "";
-            opacity: 1;
-            width: 80%;
-            transform: translateX(-50%) scaleX(1); } }
+      background-color: transparent; }
+      .navbar__item:hover::after, .navbar__item:active::after {
+        content: "";
+        opacity: 1;
+        width: 80%;
+        transform: translateX(-50%) scaleX(1); }
   .navbar__checkbox {
     display: none; }
   .navbar__button {
@@ -8156,9 +8196,14 @@ input[type="reset"],
     opacity: 1;
     width: 100vw;
     height: 100vh;
-    padding: 11rem 0; }
-    .navbar__checkbox:checked ~ .navbar__navigation ul > li {
+    padding: 11rem 2rem; }
+    .navbar__checkbox:checked ~ .navbar__navigation .navbar__item {
+      transition: opacity ease-in 800ms;
       opacity: 1; }
+      .navbar__checkbox:checked ~ .navbar__navigation .navbar__item a,
+      .navbar__checkbox:checked ~ .navbar__navigation .navbar__item--cta a {
+        border: none;
+        padding-left: 1rem; }
   .navbar__checkbox:checked ~ .navbar__button span {
     background-color: transparent; }
   .navbar__checkbox:checked ~ .navbar__button span::before {
@@ -8260,10 +8305,10 @@ input[type="reset"],
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%); }
+    transform: translateY(-60%) translateX(-50%); }
     @media (min-width: 64em) {
       .hero__container {
-        transform: translateY(-45%) translateX(-50%); } }
+        transform: translateY(-38%) translateX(-50%); } }
   .hero__intro h1 {
     font-family: "Visby CF", sans-serif;
     letter-spacing: 1.5;
@@ -8275,7 +8320,7 @@ input[type="reset"],
       .hero__intro h1 {
         font-size: 4.8rem; } }
   .hero__intro p {
-    margin: 4rem 0;
+    margin: 3rem 0;
     line-height: 1.8; }
     @media (min-width: 64em) {
       .hero__intro p {
@@ -8289,7 +8334,7 @@ input[type="reset"],
     font-weight: 600; }
 
 .intro {
-  padding: 14.5vh 0; }
+  padding: 8vh 0; }
 
 .about__img {
   max-height: 462px;

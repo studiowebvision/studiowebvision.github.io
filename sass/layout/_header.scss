@@ -1,12 +1,11 @@
 .header {
-  padding-top: 3rem;
   position: relative;
-  min-height: 520px;
+  min-height: 550px;
 
   &--home {
     height: 100vh;
     @include respond-to("medium") {
-      height: 50vh;
+      height: 60vh;
     }
   }
 }
