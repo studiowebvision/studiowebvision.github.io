@@ -52,4 +52,14 @@ a.btn,
     border: 2px solid #fff;
     margin-top: 0;
   }
+
+  &--blue {
+    background-color: transparent;
+    border: 2px solid $darkBlue;
+    color: $darkBlue;
+    margin-top: 0;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+  }
 }

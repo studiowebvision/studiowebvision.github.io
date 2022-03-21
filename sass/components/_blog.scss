@@ -1,8 +1,13 @@
 .blog {
-  padding: 14.6rem 0;
+  padding-top: 0;
+  padding-bottom: 12.5rem;
 
   &__intro {
     margin-bottom: 7rem;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 
   &__item {
@@ -11,12 +16,23 @@
     border-radius: 10px;
     overflow: hidden;
     height: 100%;
-    margin-right: 3rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    @include respond-to("medium") {
+      margin-right: 3rem;
+    }
   }
 
+  &__img {
+    a {
+      display: inline-block;
+      height: 100%;
+    }
+  }
   &__content {
     padding: 2rem;
+    padding-bottom: 0.5rem;
   }
 
   &__date {
@@ -28,11 +44,18 @@
   }
 
   &__readmore {
-    background-color: #838383;
+    background-color: $lightBlue;
+    color: $white;
+    align-self: end;
+    margin-top: auto;
     width: 6rem;
     height: 6rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
