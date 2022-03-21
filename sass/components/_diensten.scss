@@ -1,0 +1,68 @@
+.diensten {
+  padding: 12.7rem 0;
+
+  &__item {
+    height: 100%;
+    img {
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+
+  &__item:not(:first-child) {
+    padding-top: 10.2rem;
+  }
+
+  /* Images */
+  &__img {
+    height: 100%;
+
+    /* First img */
+    &--1 img {
+      width: 270px;
+      height: 427px;
+    }
+
+    /* Second img */
+    &--2 img {
+      width: 170px;
+      height: 427px;
+    }
+  }
+
+  /* Content box */
+
+  &__content {
+    margin-left: 10rem;
+    font-size: 1.8rem;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 3rem 0;
+    }
+
+    ul {
+      @include list-reset();
+
+      li::before {
+        content: "\2022";
+        display: inline-block;
+        color: $lightBlue;
+        font-weight: bold;
+        font-size: 5rem;
+        vertical-align: middle;
+        line-height: 2rem;
+        width: 2rem;
+      }
+
+      li {
+        margin-bottom: 1.5rem;
+        color: #282828;
+        font-weight: 600;
+      }
+    }
+  }
+}

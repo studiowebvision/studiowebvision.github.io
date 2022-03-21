@@ -3,7 +3,7 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"],
-.btn {
+a.btn {
   padding: 1.1rem 2rem;
   font-weight: 600;
   font-family: inherit;
@@ -15,6 +15,7 @@ input[type="reset"],
   display: inline-block;
 }
 
+a.btn,
 .btn {
   &--primary {
     background: $darkBlue;
@@ -26,11 +27,23 @@ input[type="reset"],
   }
 
   &--secondary {
-    background: $lightBlue;
-    color: $white;
+    color: $lightBlue;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1.2rem 2rem 1.2rem 0;
+    display: inline-block;
+    opacity: 1;
+    transition: font-size ease-in-out 200ms;
+    margin-top: 0;
+    &::after {
+      content: "\f105";
+      font-family: "Font Awesome 6 Free";
+      padding-left: 1rem;
+      font-size: 1.6rem;
+    }
 
     &:hover {
-      background: rgba($lightBlue, 0.6);
+      font-size: 1.9rem;
     }
   }
 

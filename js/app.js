@@ -6,7 +6,8 @@ $(function () {
     speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
-    variableHeight: true,
+    adaptiveHeight: false,
+    variableWidth: true,
     prevArrow: $("#prevProject"),
     nextArrow: $("#nextProject"),
 
@@ -32,9 +33,6 @@ $(function () {
           slidesToScroll: 1,
         },
       },
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ],
   });
 

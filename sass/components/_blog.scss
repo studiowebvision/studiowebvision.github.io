@@ -1,0 +1,38 @@
+.blog {
+  padding: 14.6rem 0;
+
+  &__intro {
+    margin-bottom: 7rem;
+  }
+
+  &__item {
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    margin-right: 3rem;
+    position: relative;
+  }
+
+  &__content {
+    padding: 2rem;
+  }
+
+  &__date {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #838383;
+    letter-spacing: 0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  &__readmore {
+    background-color: #838383;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

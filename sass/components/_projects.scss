@@ -1,0 +1,114 @@
+.projects {
+  padding: 8rem 0;
+  height: 50vh;
+
+  .container-fluid {
+    position: relative;
+  }
+
+  &__wrapper {
+    justify-content: end;
+  }
+
+  .slick-slide {
+    min-height: 500px;
+    width: auto;
+  }
+
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+  }
+
+  &__fullcoll {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+  }
+
+  &__slides-container {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Next / Prev buttons carousel */
+  &__nav {
+    display: flex;
+  }
+
+  &__next,
+  &__prev {
+    background-color: $lightBlue;
+    padding: 0.8rem 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__prev {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+
+  &__item {
+    width: auto;
+  }
+
+  &__img {
+    margin-right: 4rem;
+    position: relative;
+
+    img {
+      border-radius: 5px;
+      height: auto;
+      max-width: 100%;
+      height: 390px;
+    }
+  }
+
+  &__hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity ease-in-out 500ms;
+    text-align: center;
+
+    i {
+      background: $linkColor;
+      padding: 1.5rem;
+      border-radius: 100%;
+      color: white;
+      font-size: 2.2rem;
+    }
+
+    h3 {
+      margin-top: 3rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $white;
+    }
+  }
+
+  &__img:hover &__hover {
+    opacity: 1;
+  }
+}

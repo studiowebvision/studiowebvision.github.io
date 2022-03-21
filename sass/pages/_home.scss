@@ -105,108 +105,75 @@
 
     ul {
       @include list-reset();
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
 
       li {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
+        margin-right: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        &::before {
+          content: "\f058";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          color: $lightBlue;
+          font-size: 2rem;
+          margin-right: 1rem;
+        }
       }
     }
   }
 }
 
-// .chooseus {
-//   background: #fbfbfb;
-//   padding: 4rem 0 10rem 0;
-//   position: relative;
-
-//   &__img {
-//     position: absolute;
-//     right: 0;
-//     top: 0;
-//     height: 100%;
-//     padding-top: 5rem;
-
-//     img {
-//       height: 100%;
-//       object-fit: contain;
-//       vertical-align: top;
-//     }
-//   }
-
-//   h2 {
-//     font-size: 3.2rem;
-//     font-weight: 500;
-//     color: $darkBlue;
-//     margin-bottom: 2rem;
-//   }
-
-//   p {
-//     text-align: justify;
-//     margin-bottom: 2.8rem;
-//     padding-right: 5rem;
-//   }
-
-//   ul {
-//     list-style: none;
-//     padding: 0;
-//     margin: 0;
-//   }
-
-//   li {
-//     position: relative;
-//     padding-left: 2.5rem;
-//     margin-bottom: 2rem;
-
-//     &::before {
-//       content: "\f105";
-//       font-family: "Font Awesome 6 Free";
-//       font-weight: 900;
-//       position: absolute;
-//       color: $lightBlue;
-//       font-size: 2.2rem;
-//       top: -5px;
-//       left: 0;
-//     }
-
-//     h3 {
-//       font-size: 2rem;
-//       font-weight: 400;
-//       font-family: $fontHeading;
-//       color: $darkBlue;
-//     }
-//   }
-// }
-
 .workflow {
-  background: $darkBlue;
-  padding: 3rem 0;
-  color: $white;
+  background: $lighterBlue;
+  position: relative;
+  z-index: -1;
+  padding: 8rem 0;
 
-  h2 {
-    font-size: 4rem;
-  }
-
-  .seperator {
-    margin-left: auto;
-    margin-right: auto;
+  @include respond-to("medium") {
+    margin-top: -5rem;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
   }
 
   &__container {
-    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-direction: column;
+
+    @include respond-to("medium") {
+      flex-direction: row;
+    }
   }
 
   &__item {
+    flex-basis: 40%;
     display: flex;
-    align-items: center;
     gap: 2rem;
 
-    span {
-      font-size: 8rem;
-      opacity: 0.3;
+    h2 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
     }
+  }
 
-    h3 {
-      font-size: 3rem;
-    }
+  &__icon {
+    flex: 0 0 7.2rem;
+    background-color: $darkBlue;
+    border-radius: 50%;
+    width: 7.2rem;
+    height: 7.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: $white;
   }
 }
 
@@ -237,83 +204,4 @@
       }
     }
   }
-}
-
-/* Projecten */
-.projects {
-  padding: 8rem 9rem;
-  .slick-slide {
-    min-height: 500px;
-  }
-  h2 {
-    font-size: 3.2rem;
-    font-weight: 500;
-    color: $darkBlue;
-  }
-
-  &__slides-container {
-    margin-top: 3rem;
-  }
-
-  &__nav {
-    text-align: right;
-    padding-right: 2.5rem;
-
-    span {
-      border-radius: 5px;
-      background-color: $darkBlue;
-      padding: 0.8rem 1.5rem;
-      color: #fff;
-      display: inline-block;
-      cursor: pointer;
-    }
-  }
-
-  &__img {
-    padding-right: 4rem;
-    position: relative;
-
-    img {
-      border-radius: 5px;
-      height: auto;
-      max-width: 100%;
-    }
-
-    a {
-      &::after {
-        content: "\f08e";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        right: 50px;
-        position: absolute;
-        bottom: -20px;
-        z-index: 8;
-        background: $linkColor;
-        padding: 1.5rem;
-        border-radius: 100%;
-        color: white;
-        font-size: 2.2rem;
-      }
-    }
-  }
-
-  &__item {
-    h3 {
-      margin-top: 3rem;
-      font-size: 2.5rem;
-      font-weight: 500;
-      color: $darkBlue;
-    }
-  }
-}
-
-/* Call us form */
-.callus {
-  background-color: $darkBlue;
-  color: #fff;
-  padding: 5rem 0;
-}
-
-.blog {
-  padding: 5rem 0;
 }

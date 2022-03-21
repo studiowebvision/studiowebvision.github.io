@@ -40,12 +40,12 @@
       a {
         background-color: $linkColor;
         display: inline-block;
-        padding: 0.8rem 1.5rem;
+        padding: 0.8rem 1.1rem;
         border-radius: 5px;
       }
 
       i {
-        font-size: $footerIconSize;
+        font-size: 1.6rem;
       }
     }
   }
@@ -60,6 +60,7 @@
 
     li {
       margin-bottom: 1rem;
+      font-size: 1.5rem;
 
       &::before {
         content: "\f105";
@@ -69,11 +70,7 @@
         font-size: 1.2rem;
       }
 
-      a {
-        font-size: 1.5rem;
-      }
-
-      a:hover {
+      &:hover {
         color: $lightBlue;
       }
     }
@@ -84,10 +81,19 @@
 
     li {
       display: inline-block;
+      font-size: 1.5rem;
+      padding-right: 1.5rem;
+      position: relative;
 
-      a {
-        font-size: 1.5rem;
-        padding-right: 1.5rem;
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        margin-left: 1rem;
+        width: 2px;
+        background-color: #fff;
+        height: 60%;
+        top: 50%;
+        transform: translateY(-60%);
       }
 
       a:hover {

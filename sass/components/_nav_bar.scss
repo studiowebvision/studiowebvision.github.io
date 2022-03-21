@@ -62,7 +62,7 @@
       display: inline-block;
       font-family: $fontHeading;
       font-weight: 600;
-      font-size: 2rem;
+      font-size: 1.8rem;
       @include respond-to("medium") {
         padding: 1rem 2.5rem;
       }
@@ -79,11 +79,6 @@
       @include respond-to("medium") {
         margin-bottom: 0;
       }
-    }
-
-    &--cta a {
-      border: 2px solid #fff;
-      border-radius: 0.8rem;
     }
 
     &::after {
@@ -104,8 +99,8 @@
       }
     }
 
-    &:hover,
-    &:active {
+    &:hover:not(.navbar__item--cta),
+    &:active:not(.navbar__item--cta) {
       background-color: transparent;
       &::after {
         content: "";
@@ -113,6 +108,11 @@
         width: 80%;
         transform: translateX(-50%) scaleX(1);
       }
+    }
+
+    &--cta a {
+      border: 2px solid #fff;
+      border-radius: 0.8rem;
     }
   }
 
