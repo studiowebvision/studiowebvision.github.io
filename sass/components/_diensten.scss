@@ -1,5 +1,8 @@
 .diensten {
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
+  @include respond-to("medium") {
+    padding-bottom: 15rem;
+  }
 
   &__item {
     height: 100%;
@@ -10,31 +13,38 @@
   }
 
   &__item:not(:first-child) {
-    padding-top: 10.2rem;
+    padding-top: 2rem;
+    @include respond-to("medium") {
+      padding-top: 10.2rem;
+    }
   }
 
   /* Images */
   &__img {
     height: 100%;
 
-    /* First img */
-    &--1 img {
-      width: 270px;
-      height: 427px;
-    }
+    @include respond-to("medium") {
+      /* First img */
+      &--1 img {
+        width: 270px;
+        height: 427px;
+      }
 
-    /* Second img */
-    &--2 img {
-      width: 170px;
-      height: 427px;
+      /* Second img */
+      &--2 img {
+        width: 170px;
+        height: 427px;
+      }
     }
   }
 
   /* Content box */
 
   &__content {
-    margin-left: 10rem;
     font-size: 1.8rem;
+    @include respond-to("medium") {
+      margin-left: 10rem;
+    }
 
     h2 {
       margin-bottom: 0;

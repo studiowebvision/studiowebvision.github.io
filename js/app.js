@@ -36,7 +36,7 @@ $(function () {
     ],
   });
 
-  $("#projects .projects__item").each(function (index) {
+  $("#projects .projects__item, #blogs .blog__item").each(function (index) {
     let key = index + 1;
     $(this).attr("data-aos", "fade-left");
     $(this).attr("data-aos-delay", `${key}00`);

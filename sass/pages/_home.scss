@@ -32,7 +32,7 @@
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translateY(-60%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
     @include respond-to("medium") {
       transform: translateY(-38%) translateX(-50%);
     }
