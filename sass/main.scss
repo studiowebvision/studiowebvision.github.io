@@ -33,13 +33,14 @@ $slick-font-path: "../fonts/webfonts/";
 
 // components
 @import "components/buttons";
+@import "components/hero";
 @import "components/nav_bar";
 @import "components/card";
-@import "components/call_to_action";
 @import "components/projects";
 @import "components/callback";
 @import "components/diensten";
 @import "components/blog";
+@import "components/contact";
 
 // pages
 @import "pages/home";
