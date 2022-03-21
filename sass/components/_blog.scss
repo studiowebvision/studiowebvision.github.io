@@ -1,5 +1,5 @@
 .blog {
-  padding-top: 0;
+  padding-top: 15rem;
   padding-bottom: 12.5rem;
 
   &__intro {
@@ -19,9 +19,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    @include respond-to("medium") {
-      margin-right: 3rem;
-    }
+    // @include respond-to("medium") {
+    //   margin-right: 3rem;
+    // }
   }
 
   &__img {

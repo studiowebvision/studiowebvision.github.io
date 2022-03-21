@@ -1,5 +1,4 @@
 .cta {
-  padding-top: 5rem;
   padding-bottom: 10rem;
 
   &__container {
@@ -10,11 +9,13 @@
     h3 {
       margin-bottom: 0;
       font-weight: 600;
-      color: $darkBlue;
     }
   }
 
   &__btn {
     text-align: right;
+    a {
+      margin-top: 0;
+    }
   }
 }

@@ -15,11 +15,6 @@
   &__item {
     position: relative;
     overflow: hidden;
-    padding: 2.5rem;
-    min-height: 28rem;
-    border-radius: 1rem;
-    text-align: center;
-    border: 1px solid #efefef;
     flex: 1;
     max-width: 40rem;
 
@@ -29,31 +24,42 @@
     h4,
     h5 {
       color: $black;
-      margin-bottom: 1.8rem;
-      font-size: 2.4rem;
-      font-weight: 500;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #0f232f;
     }
 
     p {
       line-height: 1.5;
       font-size: 1.7rem;
-      margin-bottom: 1.8rem;
     }
 
-    img {
-      width: 8rem;
-      height: 8rem;
+    p,
+    h2 {
+      margin-bottom: 1.2rem;
     }
   }
 
   &__link {
-    display: inline-block;
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  &__img {
+    flex: 0 0 auto;
+    border-radius: 100%;
+    background-color: $lighterBlue;
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
   }
 
   &__icon {
     color: $lightBlue;
     font-size: 1.8rem;
-    padding: 1.2rem 2rem;
     opacity: 1;
     transition: font-size ease-in-out 200ms;
 

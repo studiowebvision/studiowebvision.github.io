@@ -71,7 +71,7 @@
 }
 
 .intro {
-  padding: 8vh 0;
+  padding: 10vh 0;
 }
 
 .about {
@@ -88,15 +88,7 @@
   &__content {
     @include respond-to("medium") {
       padding-left: 2rem;
-      max-width: 580px;
-    }
-
-    h2 {
-      font-weight: 600;
-      letter-spacing: 0.875px;
-      @include respond-to("medium") {
-        font-size: 4.5rem;
-      }
+      padding-right: 15rem;
     }
 
     p {
@@ -105,15 +97,14 @@
 
     ul {
       @include list-reset();
-      margin-top: 2rem;
-      display: flex;
-      flex-wrap: wrap;
+      margin-top: 4rem;
 
       li {
-        margin-bottom: 2rem;
+        margin-bottom: 1.8rem;
         margin-right: 1.5rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 600;
+        color: $headingColor;
         &::before {
           content: "\f058";
           font-family: "Font Awesome 6 Free";
@@ -174,34 +165,5 @@
     align-items: center;
     padding: 2rem;
     color: $white;
-  }
-}
-
-/* Section Features */
-.features {
-  padding-bottom: 15rem;
-  &__list {
-    h2 {
-      font-size: 3rem;
-      font-weight: 500;
-    }
-    ul {
-      padding-left: 2rem;
-      margin-top: 3rem;
-      li {
-        line-height: 1.5;
-        font-weight: 300;
-        font-size: 1.8rem;
-        padding-left: 1rem;
-
-        &:not(:last-child) {
-          margin-bottom: 2rem;
-        }
-        &::marker {
-          color: $lightBlue;
-          font-size: 1.8rem;
-        }
-      }
-    }
   }
 }

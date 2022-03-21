@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 78 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-576.859,-102.773)">
+        <rect x="579.802" y="105.716" width="71.291" height="58.986" style="fill:none;stroke:rgb(32,82,113);stroke-width:2.63px;"/>
+        <path d="M579.802,115.478L646.062,115.478" style="fill:none;stroke:rgb(32,82,113);stroke-width:2.63px;"/>
+        <path d="M584.276,110.641L586.846,110.641" style="fill:none;stroke:rgb(32,82,113);stroke-width:2.63px;"/>
+        <path d="M589.416,110.641L591.985,110.641" style="fill:none;stroke:rgb(32,82,113);stroke-width:2.63px;"/>
+        <path d="M594.556,110.641L597.125,110.641" style="fill:none;stroke:rgb(32,82,113);stroke-width:2.63px;"/>
+        <path d="M608.786,130.848L628.989,130.848L624.49,142.078L607.307,142.078L601.267,126.357L597.396,126.357" style="fill:none;stroke:rgb(32,82,113);stroke-width:2.63px;stroke-linecap:square;"/>
+        <path d="M625.504,147.729L606.701,147.729C605.947,147.729 605.474,146.998 605.749,146.265L607.307,142.078" style="fill:none;stroke:rgb(32,82,113);stroke-width:2.63px;stroke-linecap:square;"/>
+        <path d="M625.36,152.096C625.36,153.194 624.471,154.084 623.373,154.084C622.275,154.084 621.386,153.194 621.386,152.096C621.386,150.999 622.275,150.109 623.373,150.109C624.471,150.109 625.36,150.999 625.36,152.096Z" style="fill:rgb(72,71,81);fill-rule:nonzero;stroke:rgb(32,82,113);stroke-width:1px;stroke-linejoin:round;"/>
+        <path d="M610.36,152.096C610.36,153.194 609.471,154.084 608.373,154.084C607.275,154.084 606.386,153.194 606.386,152.096C606.386,150.999 607.275,150.109 608.373,150.109C609.471,150.109 610.36,150.999 610.36,152.096Z" style="fill:rgb(72,71,81);fill-rule:nonzero;stroke:rgb(32,82,113);stroke-width:1px;stroke-linejoin:round;"/>
+    </g>
+</svg>
