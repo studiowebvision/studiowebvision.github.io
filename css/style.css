@@ -10842,15 +10842,18 @@ h2 {
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .header::before {
     content: "";
     width: 100%;
     background-color: #205271;
     height: 100%;
     position: absolute; }
-  .header--home::before {
-    background: linear-gradient(95.22deg, rgba(32, 82, 113, 0.85) 0.15%, rgba(32, 82, 113, 0.85) 61.73%, rgba(32, 82, 113, 0) 102.03%); }
+  .header--home {
+    min-height: 70vh; }
+    .header--home::before {
+      background: linear-gradient(95.22deg, rgba(32, 82, 113, 0.85) 0.15%, rgba(32, 82, 113, 0.85) 61.73%, rgba(32, 82, 113, 0) 102.03%); }
   .header--image::before {
     background-color: rgba(32, 82, 113, 0.9); }
 
@@ -11067,17 +11070,15 @@ a.btn--blue,
         color: #205271;
         line-height: 48px; }
   .hero--home {
-    padding-top: 3rem;
-    padding-bottom: 10rem; }
-    @media (min-width: 64em) {
-      .hero--home {
-        padding-top: 12rem;
-        padding-bottom: 17rem; } }
+    top: 50%;
+    position: absolute;
+    transform: translateY(-40%);
+    max-width: 70rem; }
   .hero--home .hero__intro {
     max-width: 100%; }
   @media (min-width: 64em) {
     .hero--home .hero__intro h1 {
-      font-size: 4.8rem; } }
+      font-size: 5.8rem; } }
 
 .navbar {
   padding: 2.5rem 0;
@@ -11478,6 +11479,9 @@ a.btn--blue,
     position: relative;
     display: flex;
     flex-direction: column; }
+    @media (min-width: 64em) {
+      .blog__item {
+        max-width: 37rem; } }
   .blog__img a {
     display: inline-block;
     height: 100%; }
@@ -11603,7 +11607,7 @@ a.btn--blue,
   padding-bottom: 7.3rem; }
 
 .intro {
-  padding-bottom: 14rem; }
+  padding-bottom: 19rem; }
 
 .about__img {
   max-height: 462px;
@@ -11617,7 +11621,7 @@ a.btn--blue,
 @media (min-width: 64em) {
   .about__content {
     padding-left: 2rem;
-    padding-right: 15rem; } }
+    padding-right: 2rem; } }
 
 .about__content p {
   line-height: 1.7; }

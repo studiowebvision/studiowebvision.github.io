@@ -19,9 +19,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    // @include respond-to("medium") {
-    //   margin-right: 3rem;
-    // }
+    @include respond-to("medium") {
+      max-width: 37rem;
+    }
   }
 
   &__img {

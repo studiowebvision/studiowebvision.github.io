@@ -3,6 +3,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
 
   &::before {
     content: "";
@@ -13,6 +14,7 @@
   }
 
   &--home {
+    min-height: 70vh;
     &::before {
       background: linear-gradient(
         95.22deg,

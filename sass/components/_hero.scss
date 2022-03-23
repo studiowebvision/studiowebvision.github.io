@@ -99,13 +99,10 @@
 
   /* Hero homepage only */
   &--home {
-    padding-top: 3rem;
-    padding-bottom: 10rem;
-
-    @include respond-to("medium") {
-      padding-top: 12rem;
-      padding-bottom: 17rem;
-    }
+    top: 50%;
+    position: absolute;
+    transform: translateY(-40%);
+    max-width: 70rem;
   }
   &--home &__intro {
     max-width: 100%;
@@ -113,7 +110,7 @@
 
   &--home &__intro h1 {
     @include respond-to("medium") {
-      font-size: 4.8rem;
+      font-size: 5.8rem;
     }
   }
 }
