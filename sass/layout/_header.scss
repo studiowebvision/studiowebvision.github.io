@@ -1,12 +1,31 @@
 .header {
   position: relative;
-  min-height: 400px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    width: 100%;
+    background-color: $darkBlue;
+    height: 100%;
+    position: absolute;
+  }
 
   &--home {
-    min-height: 100vh;
+    &::before {
+      background: linear-gradient(
+        95.22deg,
+        rgba(32, 82, 113, 0.85) 0.15%,
+        rgba(32, 82, 113, 0.85) 61.73%,
+        rgba(32, 82, 113, 0) 102.03%
+      );
+    }
+  }
 
-    @include respond-to("medium") {
-      min-height: 60vh;
+  &--image {
+    &::before {
+      background-color: rgba(32, 82, 113, 0.9);
     }
   }
 }

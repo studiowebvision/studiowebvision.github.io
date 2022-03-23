@@ -39,7 +39,8 @@ p {
 
 /* Fields */
 input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="image"]),
-textarea {
+textarea,
+select {
   border-radius: 8px;
   padding: 1.1rem 1.4rem;
   font-size: 1.9rem;
@@ -47,6 +48,7 @@ textarea {
   color: $text;
   font-family: inherit;
   width: 100%;
+  resize: none;
   &:focus {
     outline: 1px solid $darkBlue;
   }
@@ -55,6 +57,27 @@ textarea {
   }
 }
 
+select > option {
+  background-color: #fff;
+}
+
 .wrapper {
   padding: 10rem 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $darkBlue;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $lightBlue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $white;
 }

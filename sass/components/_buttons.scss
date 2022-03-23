@@ -38,8 +38,9 @@ a.btn,
     transition: font-size ease-in-out 200ms;
     margin-top: 0;
     &::after {
-      content: "\f105";
-      font-family: "Font Awesome 6 Free";
+      @extend %fa-icon;
+      @extend .fa-solid;
+      content: fa-content($fa-var-angle-right);
       padding-left: 1rem;
       font-size: 1.6rem;
     }

@@ -16,6 +16,9 @@
   background-color: $lightBlue;
   width: 6.8rem;
   margin: 2rem 0;
+  &--center {
+    margin: auto;
+  }
 }
 
 .subheading {

@@ -9,6 +9,7 @@ $fa-font-path: "../fonts/webfonts";
 @import "vendor/bootstrap/functions";
 @import "vendor/bootstrap/variables";
 @import "vendor/bootstrap/mixins";
+@import "vendor/bootstrap/bootstrap-utilities.scss";
 @import "vendor/bootstrap/grid";
 
 // slick carousel
@@ -41,6 +42,8 @@ $slick-font-path: "../fonts/webfonts/";
 @import "components/diensten";
 @import "components/blog";
 @import "components/contact";
+@import "components/content";
+@import "components/features";
 
 // pages
 @import "pages/home";

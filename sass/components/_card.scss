@@ -64,9 +64,9 @@
     transition: font-size ease-in-out 200ms;
 
     &::after {
-      content: "\f105";
-      font-family: "Font Awesome 6 Free";
-      font-weight: 600;
+      @extend %fa-icon;
+      @extend .fa-solid;
+      content: fa-content($fa-var-angle-right);
       padding-left: 0.5rem;
       font-size: 1.6rem;
     }
