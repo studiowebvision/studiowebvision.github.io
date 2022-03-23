@@ -10,16 +10,16 @@
   </head>
   <body>
     <!-- Header -->
-    <header
-      class="header header--home"
-      style="background-image: url(img/mobiel.png)"
-    >
-      <div class="container">
+    <header class="header header--home">
+      <div class="container-fluid">
         <nav class="navbar">
           <a href="/" class="navbar__logo"
             ><img src="img/logo.svg" alt="Logo"
           /></a>
           <input type="checkbox" class="navbar__checkbox" id="mobile" />
+          <span style="margin-left: auto; padding-right: 10px; color: white"
+            >MENU</span
+          >
           <label for="mobile" class="navbar__button">
             <span>&nbsp;</span>
           </label>
@@ -34,19 +34,32 @@
             </li>
           </ul>
         </nav>
-        <div class="hero hero--home">
-          <div class="hero__intro">
-            <h1>Jouw bedrijf online laten groeien</h1>
-            <div class="seperator"></div>
-            <p>
-              Op zoek naar een website of webshop voor uw bedrijf? <br />Wij
-              zorgen voor een resultaatgerichte website op maat van uw bedrijf.
-            </p>
-            <a href="#" class="btn btn--white">Vrijblijvend advies</a>
-          </div>
-        </div>
       </div>
     </header>
+    <section
+      class="hero"
+      style="
+        background-image: linear-gradient(
+            95.22deg,
+            rgba(32, 82, 113, 0.95) 0.15%,
+            rgba(32, 82, 113, 0.65) 51.73%,
+            rgba(32, 82, 113, 0) 102.03%
+          ),
+          url(images/website.jpg);
+      "
+    >
+      <div class="container">
+        <div class="hero__intro">
+          <h1>Jouw bedrijf online laten groeien</h1>
+          <div class="seperator"></div>
+          <p>
+            Op zoek naar een website of webshop voor uw bedrijf? <br />Wij
+            zorgen voor een resultaatgerichte website op maat van uw bedrijf.
+          </p>
+          <a href="#" class="btn btn--white">Vrijblijvend advies</a>
+        </div>
+      </div>
+    </section>
     <!-- End header -->
     <div class="wrapper">
       <section class="intro">
