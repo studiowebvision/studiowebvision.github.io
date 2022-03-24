@@ -1,8 +1,8 @@
 .footer {
   margin-top: auto;
   padding: 6rem 0;
-  background-color: $darkBlue;
-  color: #fff;
+  background-color: #fafafa;
+  color: $darkBlue;
 
   hr {
     margin: 2rem 0;
@@ -17,7 +17,7 @@
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
     padding-left: 1.3rem;
-    color: $white;
+    color: $darkBlue;
     position: relative;
 
     &::before {
@@ -39,7 +39,7 @@
       display: inline-block;
       margin-right: 0.5rem;
       a {
-        background-color: $linkColor;
+        background-color: $lightBlue;
         display: inline-block;
         padding: 0.8rem 1.1rem;
         border-radius: 5px;
@@ -47,6 +47,7 @@
 
       i {
         font-size: 1.6rem;
+        color: $white;
       }
     }
   }
@@ -60,16 +61,8 @@
     margin-top: 3rem;
 
     li {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-
-      &::before {
-        content: "\f105";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 600;
-        padding-right: 1.5rem;
-        font-size: 1.2rem;
-      }
+      margin-bottom: 1.2rem;
+      font-size: 1.6rem;
 
       &:hover {
         color: $lightBlue;
@@ -91,7 +84,7 @@
         position: absolute;
         margin-left: 1rem;
         width: 2px;
-        background-color: #fff;
+        background-color: $lightBlue;
         height: 60%;
         top: 50%;
         transform: translateY(-60%);
@@ -100,6 +93,28 @@
       a:hover {
         color: $lightBlue;
       }
+    }
+  }
+
+  &__top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity ease-in-out 500ms;
+
+    a {
+      display: flex;
+      width: 4rem;
+      height: 4rem;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #1c5372;
+      border-radius: 100%;
+      color: white;
     }
   }
 }

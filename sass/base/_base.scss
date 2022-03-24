@@ -39,22 +39,49 @@ p {
 
 /* Fields */
 input:not([type="button"]):not([type="reset"]):not([type="submit"]):not([type="image"]),
-textarea {
-  border-radius: 8px;
-  padding: 1.1rem 1.4rem;
+textarea,
+select {
   font-size: 1.9rem;
-  border: 1px solid #eaeaea;
-  color: $text;
+  color: inherit;
   font-family: inherit;
   width: 100%;
-  &:focus {
-    outline: 1px solid $darkBlue;
-  }
+  resize: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #eaeaea;
+  padding: 1.4rem 0;
+
   &::placeholder {
-    color: #a7aabe;
+    color: inherit;
   }
+
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $lightBlue;
+  }
+}
+
+select > option {
+  background-color: #fff;
 }
 
 .wrapper {
   padding: 10rem 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $darkBlue;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $lightBlue;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $white;
 }

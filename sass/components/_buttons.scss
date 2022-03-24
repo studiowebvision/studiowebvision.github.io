@@ -12,10 +12,10 @@ a.btn {
   border: none;
   border-radius: 0.8rem;
   transition: all 300ms ease-in;
-  // margin-top: 1.5rem;
   display: inline-block;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   cursor: pointer;
+  background-color: transparent;
 }
 
 a.btn,
@@ -38,8 +38,10 @@ a.btn,
     transition: font-size ease-in-out 200ms;
     margin-top: 0;
     &::after {
-      content: "\f105";
-      font-family: "Font Awesome 6 Free";
+      @extend %fa-icon;
+      @extend .fa-solid;
+      content: fa-content($fa-var-angle-right);
+
       padding-left: 1rem;
       font-size: 1.6rem;
     }
@@ -52,7 +54,23 @@ a.btn,
   &--white {
     background-color: transparent;
     border: 2px solid #fff;
+    color: #fff;
     margin-top: 0;
+
+    &:hover {
+      color: $lightBlue;
+      border-color: $lightBlue;
+    }
+  }
+
+  &--call {
+    &::before {
+      @extend %fa-icon;
+      @extend .fa-solid;
+      content: fa-content($fa-var-phone);
+      font-size: 1.4rem;
+      padding-right: 1rem;
+    }
   }
 
   &--blue {

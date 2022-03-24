@@ -1,0 +1,17 @@
+.features {
+  background-color: $lighterBlue;
+  padding-top: 20rem;
+  padding-bottom: 7.3rem;
+
+  &__intro {
+    text-align: center;
+    max-width: 75rem;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 4.5rem;
+      font-weight: 600;
+      letter-spacing: 0.875px;
+    }
+  }
+}

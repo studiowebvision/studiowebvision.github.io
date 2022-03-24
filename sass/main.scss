@@ -9,7 +9,11 @@ $fa-font-path: "../fonts/webfonts";
 @import "vendor/bootstrap/functions";
 @import "vendor/bootstrap/variables";
 @import "vendor/bootstrap/mixins";
+@import "vendor/bootstrap/helpers";
+@import "vendor/bootstrap/bootstrap-utilities.scss";
+@import "vendor/bootstrap/modal.scss";
 @import "vendor/bootstrap/grid";
+@import "vendor/bootstrap/utilities/api";
 
 // slick carousel
 $slick-loader-path: "../img/";
@@ -33,6 +37,7 @@ $slick-font-path: "../fonts/webfonts/";
 
 // components
 @import "components/buttons";
+@import "components/scroll";
 @import "components/hero";
 @import "components/nav_bar";
 @import "components/card";
@@ -41,6 +46,10 @@ $slick-font-path: "../fonts/webfonts/";
 @import "components/diensten";
 @import "components/blog";
 @import "components/contact";
+@import "components/workflow";
+@import "components/content";
+@import "components/features";
+@import "components/modal";
 
 // pages
 @import "pages/home";

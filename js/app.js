@@ -42,5 +42,25 @@ $(function () {
     $(this).attr("data-aos-delay", `${key}00`);
   });
 
+  $("a[href='#top']").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
+
+  $("#scrollDown").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: $(".wrapper").offset().top }, "slow");
+    return false;
+  });
+
+  $(window).on("scroll", function () {
+    if ($(document).scrollTop() > 250) {
+      $(".footer__top").css("opacity", 1);
+    } else {
+      $(".footer__top").css("opacity", 0);
+    }
+  });
+
   AOS.init();
 });

@@ -1,5 +1,6 @@
 .navbar {
-  padding: 3rem 0;
+  padding: 3rem 3rem;
+  position: relative;
   display: flex;
   width: 100%;
   height: 140px;
@@ -34,18 +35,18 @@
     padding: 1rem;
 
     /* Show navigation on large screen */
-    // @include respond-to("medium") {
-    //   position: relative;
-    //   opacity: 1;
-    //   width: 100%;
-    //   padding: 0;
-    //   height: auto;
-    //   background-color: transparent;
-    //   display: flex;
-    //   justify-content: end;
-    //   align-items: center;
-    //   padding: 0;
-    // }
+    @include respond-to("medium") {
+      position: relative;
+      opacity: 1;
+      width: 100%;
+      padding: 0;
+      height: auto;
+      background-color: transparent;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding: 0;
+    }
   }
 
   /* Nav Bar Item */
@@ -100,7 +101,8 @@
     }
 
     &:hover:not(.navbar__item--cta),
-    &:active:not(.navbar__item--cta) {
+    &:active:not(.navbar__item--cta),
+    &.active:not(.navbar__item--cta) {
       background-color: transparent;
       &::after {
         content: "";
@@ -125,9 +127,9 @@
     position: relative;
     z-index: 9;
 
-    // @include respond-to("medium") {
-    //   display: none;
-    // }
+    @include respond-to("medium") {
+      display: none;
+    }
 
     span {
       text-align: center;
@@ -137,8 +139,8 @@
       &::after,
       &::before {
         width: 3rem;
-        height: 4px;
-        background-color: $darkBlue;
+        height: 3px;
+        background-color: $white;
         display: inline-block;
         transition: all 100ms ease-in;
       }
