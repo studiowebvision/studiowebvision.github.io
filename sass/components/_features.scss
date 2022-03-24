@@ -1,17 +1,75 @@
 .features {
   background-color: $lighterBlue;
-  padding-top: 20rem;
+  padding-top: 25rem;
   padding-bottom: 7.3rem;
+  margin-bottom: 19rem;
 
   &__intro {
     text-align: center;
-    max-width: 75rem;
-    margin: 0 auto;
+    padding: 0 25rem;
 
     h2 {
       font-size: 4.5rem;
+      margin-bottom: 3.5rem;
       font-weight: 600;
       letter-spacing: 0.875px;
+    }
+
+    p {
+      font-weight: 500;
+      line-height: 1.7;
+    }
+  }
+
+  &__list {
+    border: none;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  &__link {
+    &.active {
+      color: $darkBlue;
+      font-weight: 700;
+      &::after {
+        content: "";
+        display: block;
+        margin-top: 0.5rem;
+        width: 100%;
+        height: 3px;
+        background-color: $darkBlue;
+      }
+    }
+  }
+
+  &__content {
+    padding: 0 15rem;
+  }
+
+  &__box {
+    display: flex;
+    gap: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__icon {
+    padding-top: 0.2rem;
+    i {
+      font-size: 2.5rem;
+      color: $lightBlue;
+    }
+  }
+
+  &__desc {
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 1.8rem;
+    }
+    p {
+      font-size: 1.6rem;
     }
   }
 }
